@@ -20,6 +20,7 @@ library(geosphere)
 library(randomForest)
 library(pROC)
 library(caret)
+library(xgboost)
 
 setwd(here())
 ```
@@ -96,34 +97,21 @@ clustered_accident_data <- accident_data[accident_data$Cluster > 0, ]
 ```
 
 ```{r}
-calculate_centroids <- function(data, cluster_label) {
-    centroids <- matrix(nrow = max(cluster_label), ncol = ncol(data))
-    for (cl in 1:max(cluster_label)) {
-        centroids[cl, ] <- colMeans(data[cluster_label == cl, ])
-    }
-    return(centroids)
-}
+# Calculate the centroids of the clusters
+centroids <- tapply(
+  seq_len(nrow(clustered_accident_data)),
+  clustered_accident_data$Cluster,
+  function(rows) colMeans(clustered_accident_data[rows, 1:2])
+)
 
-centroids <- calculate_centroids(coordinates, cluster_labels)
+# Calculate the distance from each point to its closest centroid
+accident_data$DistanceToHotspot <- apply(coordinates, 1, function(coord) {
+  min(sapply(centroids, function(centroid) dist(rbind(coord, centroid))))
+})
+```
 
-# 2. Compute Distances
-calculate_distances <- function(data, centroids, cluster_label) {
-    distances <- numeric(nrow(data))
-    for (i in 1:nrow(data)) {
-        cl <- cluster_label[i]
-        if (cl > 0 && !is.na(centroids[cl, 1])) {
-            distances[i] <- distm(data[i, , drop = FALSE], centroids[cl, , drop = FALSE], fun = distHaversine)
-        } else {
-            distances[i] <- NA  # Assign NA to noise points
-        }
-    }
-    return(distances)
-}
-
-distances_to_center <- calculate_distances(coordinates, centroids, cluster_labels)
-
-# 3. Add Distances to the Dataframe
-accident_data$DistanceToCenter <- distances_to_center
+```{r}
+summary(accident_data$DistanceToHotspot)
 ```
 
 ```{r}
@@ -149,13 +137,12 @@ map
 
 ```{r}
 accident_data <- accident_data[, !(names(accident_data) %in% c(
-  "Longitude", "Latitude", "Cluster", "Hour",
+  "Longitude", "Latitude", "Cluster", "Hour", "Number_of_Casualties",
   "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
   "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
 ))]
 
-accident_data <- accident_data[!is.na(accident_data$Accident_Severity),]
-accident_data$Accident_Severity <- factor(accident_data$Accident_Severity)
+accident_data <- accident_data[!is.na(accident_data$Accident_Severity), ]
 
 # Convert all columns to factors
 accident_data <- accident_data %>%
@@ -171,30 +158,62 @@ train_indices <- sample(nrow(accident_data), nrow(accident_data) * 0.7)
 train_data <- accident_data[train_indices, ]
 test_data <- accident_data[-train_indices, ]
 
-# Create the logistic regression model
-class_weights <- c('0' = 1, '1' = 10)
-model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20, classwt = class_weights, na.action = na.roughfix)
+# Create the xgboost model
+params <- list(
+  objective = "binary:logistic",
+  eval_metric = "logloss",
+  eta = 0.1,
+  max_depth = 4,
+  subsample = 0.8,
+  colsample_bytree = 0.8
+)
 
+# Convert the data to numeric
+train_data_numeric <- train_data %>%
+  mutate_if(is.factor, as.numeric)
+test_data_numeric <- test_data %>%
+  mutate_if(is.factor, as.numeric)
+
+# Now use this numeric data in your model
+model <- xgboost(
+  data = as.matrix(train_data_numeric %>% select(-Accident_Severity)),
+  label = train_data$Accident_Severity,
+  params = params,
+  nrounds = 100
+)
 # Make predictions on the test data
-predictions <- predict(model, test_data)
+predictions <- predict(
+  model,
+  as.matrix(test_data_numeric %>% select(-Accident_Severity))
+)
 ```
 
 ```{r}
-accuracy <- confusionMatrix(predictions, test_data$Accident_Severity)
-print(accuracy$overall['Accuracy'])
+summary(train_data_numeric)
+
+# Accuracy
+mean(ifelse(predictions > 0.5, 1, 0) == test_data$Accident_Severity)
 ```
 ```{r}
-prob_predictions <- predict(model, test_data, type = "prob")
-
-roc_obj <- roc(test_data$Accident_Severity, prob_predictions[,2])
+# AUC score
+roc_obj <- roc(test_data$Accident_Severity, predictions)
 auc_value <- auc(roc_obj)
 print(auc_value)
 ```
 ```{r}
-plot(roc_obj, main="ROC")
+# Plot the ROC curve
+plot(roc_obj, main = "ROC")
 ```
 
 ```{r}
-confusion_matrix <- table(predictions, test_data$Accident_Severity)
-confusion_matrix
+# Feature importance
+xgb.importance(model = model)
+
+# Show importance plot with ggplot2
+xgb.importance(model = model) %>%
+  as.data.frame() %>%
+  ggplot(aes(x = reorder(Feature, Gain), y = Gain)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  theme_bw()
 ```
