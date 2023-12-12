@@ -1,11 +1,8 @@
 ---
-title: "UK road safety accidents"
+title: Causal Machine Learning for Spatial Data Project - UK road safety accidents"
+authors: Hubert Wojewoda, Kacper Sokołowski
 output: html_notebook
 ---
-
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
 ```{r}
 library(tidyverse)
@@ -154,7 +151,10 @@ summary(accident_data)
 ```{r}
 # Split the data into training and testing sets
 set.seed(123)
-train_indices <- sample(nrow(accident_data), nrow(accident_data) * 0.7)
+train_indices <- createDataPartition(
+  accident_data$Accident_Severity,
+  p = 0.7, list = FALSE
+)
 train_data <- accident_data[train_indices, ]
 test_data <- accident_data[-train_indices, ]
 
