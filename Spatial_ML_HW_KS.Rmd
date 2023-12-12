@@ -167,12 +167,12 @@ summary(accident_data)
 ```{r}
 # Split the data into training and testing sets
 set.seed(123)
-train_indices <- sample(nrow(accident_data), nrow(accident_data) * 0.7)
+train_indices <- createDataPartition(accident_data$Accident_Severity, p = 0.7, list = FALSE)
 train_data <- accident_data[train_indices, ]
 test_data <- accident_data[-train_indices, ]
 
 # Create the logistic regression model
-class_weights <- c('0' = 1, '1' = 10)
+class_weights <- c('0' = 1, '1' = 5)
 model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20, classwt = class_weights, na.action = na.roughfix)
 
 # Make predictions on the test data
