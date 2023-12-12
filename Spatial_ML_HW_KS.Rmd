@@ -16,6 +16,10 @@ library(sf)
 library(here)
 library(dbscan)
 library(leaflet)
+library(geosphere)
+library(randomForest)
+library(pROC)
+library(caret)
 
 setwd(here())
 ```
@@ -89,7 +93,40 @@ accident_data$Cluster <- cluster_labels
 
 # Filter the accident_data dataframe to include only observations in a cluster
 clustered_accident_data <- accident_data[accident_data$Cluster > 0, ]
+```
 
+```{r}
+calculate_centroids <- function(data, cluster_label) {
+    centroids <- matrix(nrow = max(cluster_label), ncol = ncol(data))
+    for (cl in 1:max(cluster_label)) {
+        centroids[cl, ] <- colMeans(data[cluster_label == cl, ])
+    }
+    return(centroids)
+}
+
+centroids <- calculate_centroids(coordinates, cluster_labels)
+
+# 2. Compute Distances
+calculate_distances <- function(data, centroids, cluster_label) {
+    distances <- numeric(nrow(data))
+    for (i in 1:nrow(data)) {
+        cl <- cluster_label[i]
+        if (cl > 0 && !is.na(centroids[cl, 1])) {
+            distances[i] <- distm(data[i, , drop = FALSE], centroids[cl, , drop = FALSE], fun = distHaversine)
+        } else {
+            distances[i] <- NA  # Assign NA to noise points
+        }
+    }
+    return(distances)
+}
+
+distances_to_center <- calculate_distances(coordinates, centroids, cluster_labels)
+
+# 3. Add Distances to the Dataframe
+accident_data$DistanceToCenter <- distances_to_center
+```
+
+```{r}
 # Create a color palette for clusters
 cluster_palette <- colorFactor(
   palette = "Set1",
@@ -112,11 +149,13 @@ map
 
 ```{r}
 accident_data <- accident_data[, !(names(accident_data) %in% c(
+  "Longitude", "Latitude", "Cluster", "Hour",
   "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
   "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
 ))]
 
-accident_data <- na.omit(accident_data)
+accident_data <- accident_data[!is.na(accident_data$Accident_Severity),]
+accident_data$Accident_Severity <- factor(accident_data$Accident_Severity)
 
 # Convert all columns to factors
 accident_data <- accident_data %>%
@@ -126,8 +165,6 @@ summary(accident_data)
 ```
 
 ```{r}
-library(randomForest)
-
 # Split the data into training and testing sets
 set.seed(123)
 train_indices <- sample(nrow(accident_data), nrow(accident_data) * 0.7)
@@ -135,26 +172,26 @@ train_data <- accident_data[train_indices, ]
 test_data <- accident_data[-train_indices, ]
 
 # Create the logistic regression model
-model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20)
+class_weights <- c('0' = 1, '1' = 10)
+model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20, classwt = class_weights, na.action = na.roughfix)
 
 # Make predictions on the test data
 predictions <- predict(model, test_data)
+```
 
-# Evaluate the model accuracy
-cutoff <- 0.5
-mean(ifelse(predictions >= cutoff, 1, 0) == test_data$Accident_Severity)
+```{r}
+accuracy <- confusionMatrix(predictions, test_data$Accident_Severity)
+print(accuracy$overall['Accuracy'])
+```
+```{r}
+prob_predictions <- predict(model, test_data, type = "prob")
 
-# Calculate the AUC score
-auc_score <- prediction(predictions, test_data$Accident_Severity) %>%
-  performance("auc") %>%
-  as.numeric()
-auc_score
-
-# Plot the ROC curve
-roc <- prediction(predictions, test_data$Accident_Severity) %>%
-  performance("tpr", "fpr") %>%
-  plot()
-roc
+roc_obj <- roc(test_data$Accident_Severity, prob_predictions[,2])
+auc_value <- auc(roc_obj)
+print(auc_value)
+```
+```{r}
+plot(roc_obj, main="ROC")
 ```
 
 ```{r}
