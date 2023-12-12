@@ -56,8 +56,10 @@ accident_data <- accident_data %>%
 ```
 
 ```{r}
+accident_data$Accident_Severity <- accident_data$Accident_Severity %>%
+  recode("Slight" = 0, "Severe" = 1, "Fatal" = 1)
+
 accident_data$Date <- as.Date(accident_data$Date, format = "%Y-%m-%d")
-accident_data$Accident_Severity <- as.factor(accident_data$Accident_Severity)
 accident_data$Year <- format(accident_data$Date, "%Y")
 
 accident_data$Day_of_Week <- weekdays(accident_data$Date)
@@ -94,24 +96,21 @@ cluster_palette <- colorFactor(
   domain = clustered_accident_data$Cluster
 )
 
-# Create a leaflet map
+# Create a leaflet map with a random sample of points
 map <- leaflet() %>%
-  addTiles() %>% # Add the default map tiles
+  addTiles() %>%
   addCircleMarkers(
-    data = clustered_accident_data, # Filtered data with cluster assignments
-    lng = ~Longitude, # Longitude column
-    lat = ~Latitude, # Latitude column
-    color = ~ cluster_palette(Cluster), # Marker color based on cluster
-    radius = 3, # Marker size
-    popup = ~ paste("Grid Cell:", Cluster) # Display cluster ID in popup
+    data = sample_n(clustered_accident_data, size = 10000),
+    lng = ~Longitude,
+    lat = ~Latitude,
+    color = ~ cluster_palette(Cluster),
+    radius = 3,
+    popup = ~ paste("Grid Cell:", Cluster)
   )
-
-# Display the map
 map
 ```
 
 ```{r}
-summary(accident_data)
 accident_data <- accident_data[, !(names(accident_data) %in% c(
   "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
   "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
@@ -122,6 +121,8 @@ accident_data <- na.omit(accident_data)
 # Convert all columns to factors
 accident_data <- accident_data %>%
   mutate_if(is.character, as.factor)
+
+summary(accident_data)
 ```
 
 ```{r}
@@ -137,12 +138,23 @@ test_data <- accident_data[-train_indices, ]
 model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20)
 
 # Make predictions on the test data
-predictions <- predict(model, newdata = test_data)
+predictions <- predict(model, test_data)
 
-# Evaluate the model performance
-accuracy <- sum(predictions == test_data$Accident_Severity) /
-  length(test_data$Accident_Severity)
-accuracy
+# Evaluate the model accuracy
+cutoff <- 0.5
+mean(ifelse(predictions >= cutoff, 1, 0) == test_data$Accident_Severity)
+
+# Calculate the AUC score
+auc_score <- prediction(predictions, test_data$Accident_Severity) %>%
+  performance("auc") %>%
+  as.numeric()
+auc_score
+
+# Plot the ROC curve
+roc <- prediction(predictions, test_data$Accident_Severity) %>%
+  performance("tpr", "fpr") %>%
+  plot()
+roc
 ```
 
 ```{r}
