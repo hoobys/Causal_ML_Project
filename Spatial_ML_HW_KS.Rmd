@@ -1,0 +1,151 @@
+---
+title: "UK road safety accidents"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(tidyverse)
+library(readr)
+library(lubridate)
+library(ggplot2)
+library(sf)
+library(here)
+library(dbscan)
+library(leaflet)
+
+setwd(here())
+```
+
+```{r}
+accident_data <- read_csv("accident_data.csv")
+
+summary(accident_data)
+head(accident_data)
+```
+
+```{r}
+unique(accident_data$Year)
+```
+
+
+```{r}
+accident_data <- accident_data %>%
+  select(
+    Longitude, Latitude,
+    Accident_Severity,
+    Date, Time,
+    Weather_Conditions, Light_Conditions,
+    Road_Surface_Conditions,
+    "1st_Road_Class", "2nd_Road_Class",
+    Speed_limit,
+    "Pedestrian_Crossing-Human_Control",
+    "Pedestrian_Crossing-Physical_Facilities",
+    Urban_or_Rural_Area,
+    Number_of_Casualties, Number_of_Vehicles
+  )
+```
+
+
+```{r}
+accident_data <- accident_data %>%
+  filter(!is.na(Longitude), !is.na(Latitude))
+```
+
+```{r}
+accident_data$Date <- as.Date(accident_data$Date, format = "%Y-%m-%d")
+accident_data$Accident_Severity <- as.factor(accident_data$Accident_Severity)
+accident_data$Year <- format(accident_data$Date, "%Y")
+
+accident_data$Day_of_Week <- weekdays(accident_data$Date)
+accident_data$Month <- format(accident_data$Date, "%m")
+accident_data$Hour <- hour(hms(accident_data$Time))
+
+accident_data$TimeOfDay <- cut(accident_data$Hour,
+  breaks = c(-Inf, 6, 12, 18, Inf),
+  labels = c("Night", "Morning", "Afternoon", "Evening")
+)
+```
+
+```{r}
+# Convert Longitude and Latitude to a matrix
+coordinates <- as.matrix(accident_data[, c("Longitude", "Latitude")])
+```
+
+```{r}
+# Perform DBSCAN clustering
+dbscan_result <- dbscan(coordinates, eps = 0.1, minPts = 500)
+
+# Extract cluster labels
+cluster_labels <- dbscan_result$cluster
+
+# Add cluster labels to the accident_data dataframe
+accident_data$Cluster <- cluster_labels
+
+# Filter the accident_data dataframe to include only observations in a cluster
+clustered_accident_data <- accident_data[accident_data$Cluster > 0, ]
+
+# Create a color palette for clusters
+cluster_palette <- colorFactor(
+  palette = "Set1",
+  domain = clustered_accident_data$Cluster
+)
+
+# Create a leaflet map
+map <- leaflet() %>%
+  addTiles() %>% # Add the default map tiles
+  addCircleMarkers(
+    data = clustered_accident_data, # Filtered data with cluster assignments
+    lng = ~Longitude, # Longitude column
+    lat = ~Latitude, # Latitude column
+    color = ~ cluster_palette(Cluster), # Marker color based on cluster
+    radius = 3, # Marker size
+    popup = ~ paste("Grid Cell:", Cluster) # Display cluster ID in popup
+  )
+
+# Display the map
+map
+```
+
+```{r}
+summary(accident_data)
+accident_data <- accident_data[, !(names(accident_data) %in% c(
+  "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
+  "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
+))]
+
+accident_data <- na.omit(accident_data)
+
+# Convert all columns to factors
+accident_data <- accident_data %>%
+  mutate_if(is.character, as.factor)
+```
+
+```{r}
+library(randomForest)
+
+# Split the data into training and testing sets
+set.seed(123)
+train_indices <- sample(nrow(accident_data), nrow(accident_data) * 0.7)
+train_data <- accident_data[train_indices, ]
+test_data <- accident_data[-train_indices, ]
+
+# Create the logistic regression model
+model <- randomForest(Accident_Severity ~ ., data = train_data, ntree = 20)
+
+# Make predictions on the test data
+predictions <- predict(model, newdata = test_data)
+
+# Evaluate the model performance
+accuracy <- sum(predictions == test_data$Accident_Severity) /
+  length(test_data$Accident_Severity)
+accuracy
+```
+
+```{r}
+confusion_matrix <- table(predictions, test_data$Accident_Severity)
+confusion_matrix
+```
