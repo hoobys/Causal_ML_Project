@@ -1,10 +1,25 @@
 ---
-title: "Causal Machine Learning for Spatial Data Project - UK road safety accidents"
-author: "Hubert Wojewoda, Kacper Sokołowski"
-output:
-  html_document:
-    df_print: paged
+title: "Analysis of Accident Severity in Proximity to Hotspots"
+output: html_document
 ---
+
+## Introduction to the Analysis of Accident Severity in Proximity to Hotspots
+
+Road safety is a paramount concern for both individuals and authorities, with the impact of traffic accidents ranging from minor to fatal. Understanding the factors that contribute to the severity of these incidents can inform preventive measures and policies. This analysis aims to investigate the influence of the distance from accident sites to traffic hotspots—locations where accidents occur more frequently—on the severity of these accidents. The working hypothesis suggests that accidents occurring closer to hotspots are more likely to result in minor (slight) injuries rather than being fatal.
+
+To conduct this investigation, data from the year 2017 were sourced from a comprehensive UK road safety dataset available at [Kaggle](https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles?select=Accident_Information.csv). The dataset encompasses detailed reports of road accidents, providing a fertile ground for spatial and quantitative analysis.
+
+### Methodology
+
+The methodology of the analysis involves several stages:
+
+- **Spatial Clustering**: Using the DBSCAN clustering method, accident locations defined by longitude and latitude were grouped to identify areas of high accident concentration.
+
+- **Hotspot Identification**: The centers of the identified clusters were calculated, establishing the hotspots. Subsequently, the distances of specific accident sites to these hotspots were determined.
+
+- **Data Modeling**: With the distances and other relevant variables at hand, the XGBoost algorithm was employed to model the data and examine the relationship between proximity to hotspots and accident severity.
+
+The outcome of this analysis aims to shed light on the spatial dynamics of road accidents and their outcomes, potentially offering insights into road safety enhancement strategies.
 
 ```{r}
 # Load libraries
@@ -28,6 +43,7 @@ library(DALEX)
 # Set working directory
 setwd(here())
 ```
+## Read data
 
 ```{r}
 # Load data
@@ -52,6 +68,7 @@ accident_data <- accident_data %>%
   )
 ```
 
+## Data adjustments
 
 ```{r}
 # Remove observations with missing values
@@ -77,6 +94,7 @@ accident_data$TimeOfDay <- cut(accident_data$Hour,
   labels = c("Night", "Morning", "Afternoon", "Evening")
 )
 ```
+## DBSCAN clustering
 
 ```{r}
 # Convert Longitude and Latitude to a matrix
@@ -95,6 +113,8 @@ accident_data$Cluster <- cluster_labels
 clustered_accident_data <- accident_data[accident_data$Cluster > 0, ]
 ```
 
+## Calculate distance to hotspots
+
 ```{r}
 # Calculate the centroids of the clusters
 centroids <- tapply(
@@ -112,6 +132,7 @@ accident_data$DistanceToHotspot <- apply(coordinates, 1, function(coord) {
 ```{r}
 summary(accident_data$DistanceToHotspot)
 ```
+## Plot clustering outcome
 
 ```{r}
 # Create a color palette for clusters
@@ -133,6 +154,12 @@ map <- leaflet() %>%
   )
 map
 ```
+
+## Clustering summary
+
+The clustering analysis depicted on the map has successfully identified 29 distinct clusters, primarily situated near densely populated areas such as major cities and urban agglomerations. This pattern is not unexpected as higher traffic volumes in such areas typically lead to a greater number of incidents. The visualization clearly indicates these hotspots, with varying cluster sizes likely reflecting the intensity of traffic accident occurrences. Recognizing these clusters is instrumental for urban planners and public safety officials, as it can guide traffic management strategies, resource deployment for emergency services, and the implementation of safety measures to mitigate accident risks in these high-density zones.
+
+## Exploratory Data Analysis
 
 ```{r}
 # Filter unnecessary columns
@@ -274,6 +301,25 @@ ggplot(
   ) +
   theme_minimal()
 ```
+## Exploratory Data Analysis Summary
+
+The exploratory data analysis stage provided several key insights from the visualizations created:
+
+### Distance to Hotspot
+- The spread in the slight category closer to hotspots indicates that minor accidents are more concentrated around these areas. Conversely, severe or fatal accidents appear to happen at various distances from hotspots, suggesting a different set of factors may influence the more serious accidents.
+
+### Weather Conditions
+- The majority of accidents occur in clear weather conditions ("Fine no high winds"), which is likely a reflection of the predominance of such weather in the dataset. Adverse weather conditions, like rain or snow, are associated with fewer accidents. This might be due to more cautious driving or fewer people traveling under these conditions.
+
+### Day of the Week
+- Fridays experience the highest number of accidents, while Sundays have the fewest. This pattern may relate to the rhythms of workweek travel and weekend behaviors. Notably, the severity of accidents does not vary markedly with the day of the week.
+
+### Time of Day
+- Afternoon hours see a spike in accident counts, possibly linked to increased traffic volume. Nighttime has the fewest accidents, which could be attributed to lower traffic density. The severity of accidents does not seem to be influenced proportionally by the time of day.
+
+### Speed Limits
+- The distribution of accidents peaks at a speed limit of 30 units, hinting that most accidents occur in areas with this speed limit, potentially in urban settings where such limits are common.
+
 
 ## Splitting the Data into Training and Testing Sets
 In this phase of our analysis, we take the crucial step of dividing
@@ -373,11 +419,6 @@ print(auc_value)
 ```
 
 ## Receiver Operating Characteristic (ROC) Curve
-The ROC curve is a crucial tool in evaluating the performance of a binary classifier system as it
-varies the decision threshold. It plots the true positive rate (sensitivity) against the false
-positive rate (1 - specificity), providing a visual representation of the trade-off between benefit
-(true positives) and cost (false positives).
-
 As seen in the graph, the ROC curve arches towards the upper left corner, indicating a good predictive performance.
 The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.
 Conversely, a curve that approaches the 45-degree diagonal line represents a less effective model, with an AUC close to 0.5,
