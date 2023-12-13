@@ -322,15 +322,7 @@ The exploratory data analysis stage provided several key insights from the visua
 
 
 ## Splitting the Data into Training and Testing Sets
-In this phase of our analysis, we take the crucial step of dividing
-our dataset into training and testing subsets. This is fundamental
-for any machine learning application, as it allows us to train our models
-on one set of data (training set) and then test their performance on a separate,
-unseen set of data (testing set). We use the createDataPartition function from
-the caret package to achieve a balanced split, ensuring that our training and
-testing sets have a similar distribution of accident severities. By setting
-set.seed(123), we guarantee that our results are reproducible, an important
-aspect of scientific analysis.
+In this phase of our analysis, we take the crucial step of dividing our dataset into training and testing subsets. This is fundamental for any machine learning application, as it allows us to train our models on one set of data (training set) and then test their performance on a separate, unseen set of data (testing set). We use the createDataPartition function from the caret package to achieve a balanced split, ensuring that our training and testing sets have a similar distribution of accident severities. By setting set.seed(123), we guarantee that our results are reproducible, an important aspect of scientific analysis.
 
 ```{r}
 # Split the data into training and testing sets
@@ -350,13 +342,7 @@ test_data_numeric <- test_data %>%
 ```
 
 ## Preparing the XGBoost Model
-We opt for the XGBoost algorithm, renowned for its efficiency and
-effectiveness in classification problems. XGBoost stands for eXtreme
-Gradient Boosting and is particularly useful in dealing with unbalanced
-datasets and non-linear relationships. We define various parameters for our
-XGBoost model, such as the learning rate (eta), maximum depth of trees (max_depth),
-and subsampling rates (subsample and colsample_bytree). These parameters are
-fine-tuned to optimize the model's performance.
+We opt for the XGBoost algorithm, renowned for its efficiency and effectiveness in classification problems. XGBoost stands for eXtreme Gradient Boosting and is particularly useful in dealing with unbalanced datasets and non-linear relationships. We define various parameters for our XGBoost model, such as the learning rate (eta), maximum depth of trees (max_depth), and subsampling rates (subsample and colsample_bytree). These parameters are fine-tuned to optimize the model's performance.
 
 ```{r}
 # Create the xgboost model
@@ -378,11 +364,7 @@ model <- xgboost(
 ```
 
 ## Making Predictions
-Finally, we use our trained model to make predictions on the test dataset.
-These predictions will help us evaluate the performance of our model in
-predicting the severity of road accidents. By comparing these predictions
-with the actual outcomes in the test dataset, we can assess the accuracy
-and reliability of our model.
+Finally, we use our trained model to make predictions on the test dataset. These predictions will help us evaluate the performance of our model in predicting the severity of road accidents. By comparing these predictions with the actual outcomes in the test dataset, we can assess the accuracy and reliability of our model.
 
 ```{r}
 # Make predictions on the test data
@@ -394,10 +376,7 @@ predictions <- predict(
 
 ## Model Evaluation Metrics
 ### Accuracy
-We assessed the accuracy of our XGBoost model, which reflects the proportion
-of correct predictions. The model achieved an accuracy of approximately 98.42%,
-indicating a high level of effectiveness in predicting the severity of road accidents.
-This metric is straightforward but should be interpreted with caution in cases of class imbalance.
+We assessed the accuracy of our XGBoost model, which reflects the proportion of correct predictions. The model achieved an accuracy of approximately 98.42%, indicating a high level of effectiveness in predicting the severity of road accidents. This metric is straightforward but should be interpreted with caution in cases of class imbalance.
 
 ```{r}
 # Accuracy
@@ -405,11 +384,7 @@ mean(ifelse(predictions > 0.5, 1, 0) == test_data$Accident_Severity)
 ```
 
 ### Area Under the Curve (AUC)
-In addition to accuracy, we evaluated the model's performance using the Area Under
-the Receiver Operating Characteristic (ROC) Curve (AUC). The AUC score, standing at
-0.774, provides an aggregate measure of the model's ability to discriminate between
-different outcome classes. A higher AUC value generally indicates a better model performance.
-This metric offers a more nuanced view of the model's effectiveness, especially in unbalanced datasets.
+In addition to accuracy, we evaluated the model's performance using the Area Under the Receiver Operating Characteristic (ROC) Curve (AUC). The AUC score, standing at 0.774, provides an aggregate measure of the model's ability to discriminate between different outcome classes. A higher AUC value generally indicates a better model performance. This metric offers a more nuanced view of the model's effectiveness, especially in unbalanced datasets.
 
 ```{r}
 # AUC score
@@ -419,14 +394,9 @@ print(auc_value)
 ```
 
 ## Receiver Operating Characteristic (ROC) Curve
-As seen in the graph, the ROC curve arches towards the upper left corner, indicating a good predictive performance.
-The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.
-Conversely, a curve that approaches the 45-degree diagonal line represents a less effective model, with an AUC close to 0.5,
-which is no better than random guessing.
+As seen in the graph, the ROC curve arches towards the upper left corner, indicating a good predictive performance. The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test. Conversely, a curve that approaches the 45-degree diagonal line represents a less effective model, with an AUC close to 0.5, which is no better than random guessing.
 
-The area under the ROC curve (AUC) provides a single measure of overall performance and can be used to compare different models.
-In our case, the previously calculated AUC of 0.774 suggests that the model has a good level of discrimination capability,
-distinguishing between the different classes of accident severity.
+The area under the ROC curve (AUC) provides a single measure of overall performance and can be used to compare different models. In our case, the previously calculated AUC of 0.774 suggests that the model has a good level of discrimination capability, distinguishing between the different classes of accident severity.
 
 ```{r}
 # Plot the ROC curve
@@ -434,19 +404,11 @@ plot(roc_obj, main = "ROC")
 ```
 
 ## Feature Importance Analysis
-The XGBoost model provides a mechanism to evaluate the importance of each feature in making predictions.
-Here we use the xgb.importance function from the XGBoost package to extract feature importance metrics.
-The table above lists the features along with their respective importance scores across three metrics: Gain, Cover, and Frequency.
+The XGBoost model provides a mechanism to evaluate the importance of each feature in making predictions. Here we use the xgb.importance function from the XGBoost package to extract feature importance metrics. The table above lists the features along with their respective importance scores across three metrics: Gain, Cover, and Frequency.
 
-In our analysis, Speed_limit is identified as the most significant feature, with the highest Gain score,
-indicating that it has the highest impact on the outcome of the model. This is followed by DistanceToHotspot
-and Number_of_Vehicles, which also play substantial roles in predicting the severity of road accidents.
+In our analysis, Speed_limit is identified as the most significant feature, with the highest Gain score, indicating that it has the highest impact on the outcome of the model. This is followed by DistanceToHotspot and Number_of_Vehicles, which also play substantial roles in predicting the severity of road accidents.
 
-The `DistanceToHotspot` is the custom spatial variable we created, measuring the distance from each accident
-to the nearest accident cluster center identified by DBSCAN clustering. Its high importance in our model
-underscores the critical role spatial factors play in road accident analysis, indicating that accidents
-occurring near these hotspots may have distinct characteristics or risk factors. This insight is valuable
-for targeted road safety measures and urban planning.
+The `DistanceToHotspot` is the custom spatial variable we created, measuring the distance from each accident to the nearest accident cluster center identified by DBSCAN clustering. Its high importance in our model underscores the critical role spatial factors play in road accident analysis, indicating that accidents occurring near these hotspots may have distinct characteristics or risk factors. This insight is valuable for targeted road safety measures and urban planning.
 
 ```{r}
 # Feature importance
@@ -462,12 +424,7 @@ xgb.importance(model = model) %>%
 ```
 
 ## Explainable Machine Learning
-Creating an explainer using the DALEX package is an essential step towards demystifying
-the complex decisions made by our XGBoost model. This process is not just about gaining
-technical clarity, but about ensuring that the predictive model we have built is transparent
-and its results are interpretable. With the explainer, we aim to break down the model's
-predictions and understand the impact of each variable, particularly our spatial feature
-`DistanceToHotspot`.
+Creating an explainer using the DALEX package is an essential step towards demystifying the complex decisions made by our XGBoost model. This process is not just about gaining technical clarity, but about ensuring that the predictive model we have built is transparent and its results are interpretable. With the explainer, we aim to break down the model's predictions and understand the impact of each variable, particularly our spatial feature `DistanceToHotspot`.
 
 ```{r}
 accident_data_matrix <- as.matrix(
@@ -485,10 +442,7 @@ explainer <- DALEX::explain(
 )
 ```
 
-This plot is a graphical representation of the importance of different predictors in the
-XGBoost model, as determined by the DALEX package's explainer object. In this plot, the
-variables are ranked according to their influence on the model's predictive accuracy,
-with longer bars indicating greater importance.
+This plot is a graphical representation of the importance of different predictors in the XGBoost model, as determined by the DALEX package's explainer object. In this plot, the variables are ranked according to their influence on the model's predictive accuracy, with longer bars indicating greater importance.
 
 ```{r}
 # Variable Importance Plot
@@ -496,14 +450,7 @@ vi <- variable_importance(explainer)
 plot(vi)
 ```
 
-In this plot, the x-axis represents different values of the Speed_limit,
-while the y-axis shows the average predicted probability of the accident severity.
-The shape of the curve suggests that the predicted severity of accidents increases
-significantly as the speed limit goes up to a certain point, then plateaus,
-and starts to decrease after that. This could imply that there's an optimal range
-of speed limits that are associated with the severity of accidents, which could
-provide actionable insights for policymakers when considering speed regulation
-as a part of road safety measures.
+In this plot, the x-axis represents different values of the Speed_limit, while the y-axis shows the average predicted probability of the accident severity. The shape of the curve suggests that the predicted severity of accidents increases significantly as the speed limit goes up to a certain point, then plateaus, and starts to decrease after that. This could imply that there's an optimal range of speed limits that are associated with the severity of accidents, which could provide actionable insights for policymakers when considering speed regulation as a part of road safety measures.
 
 ```{r}
 # Partial Dependence Plot for Speed_limit variable
@@ -511,11 +458,7 @@ sl_pdp <- model_profile(explainer, variables = "Speed_limit")
 plot(sl_pdp)
 ```
 
-This plot shows a distinct trend where the predicted severity of accidents changes
-with varying distances to hotspots. Initially, there is a sharp increase,
-which suggests that accidents occurring closer to hotspots (but not the hotspot themselves)
-are predicted to be more severe. Beyond a certain point, as the distance increases, the predicted
-severity decreases, indicating that accidents much further from these hotspots might be less fatal.
+This plot shows a distinct trend where the predicted severity of accidents changes with varying distances to hotspots. Initially, there is a sharp increase, which suggests that accidents occurring closer to hotspots (but not the hotspot themselves) are predicted to be more severe. Beyond a certain point, as the distance increases, the predicted severity decreases, indicating that accidents much further from these hotspots might be less fatal.
 
 ```{r}
 # Patrial Dependence Plot for DistanceToHotspot variable
@@ -523,16 +466,9 @@ dth_pdp <- model_profile(explainer, variables = "DistanceToHotspot")
 plot(dth_pdp)
 ```
 
-The Break Down Plot starts with a baseline, which is the intercept (the average prediction over the dataset).
-Each subsequent bar shows the contribution of an individual feature to the prediction, with bars pointing
-to the right indicating an increase in the predicted value and bars to the left indicating a decrease.
-The sum of these contributions and the intercept gives us the final prediction for this particular observation.
+The Break Down Plot starts with a baseline, which is the intercept (the average prediction over the dataset). Each subsequent bar shows the contribution of an individual feature to the prediction, with bars pointing to the right indicating an increase in the predicted value and bars to the left indicating a decrease. The sum of these contributions and the intercept gives us the final prediction for this particular observation.
 
-We can see the effects of features like TimeOfDay, Speed_limit, Urban_or_Rural_Area, and others,
-including the spatial variable DistanceToHotspot. The length and direction of each bar provide a
-clear and detailed picture of the factors leading to the prediction, which is particularly
-useful for understanding the model's decision-making process for individual predictions.
-This insight can be especially valuable when investigating specific cases or anomalies.
+We can see the effects of features like TimeOfDay, Speed_limit, Urban_or_Rural_Area, and others, including the spatial variable DistanceToHotspot. The length and direction of each bar provide a clear and detailed picture of the factors leading to the prediction, which is particularly useful for understanding the model's decision-making process for individual predictions. This insight can be especially valuable when investigating specific cases or anomalies.
 
 ```{r}
 # Break Down Plot for a single prediction
@@ -544,14 +480,9 @@ bd <- predict_parts(
 plot(bd)
 ```
 
-Each bar represents a feature's SHAP value, which quantifies the impact of that feature on the model's output.
-Red bars indicate features that push the prediction lower (decrease the predicted probability of the outcome),
-and green bars indicate features that push the prediction higher. The length of the bar shows the magnitude of the feature's impact.
+Each bar represents a feature's SHAP value, which quantifies the impact of that feature on the model's output. Red bars indicate features that push the prediction lower (decrease the predicted probability of the outcome), and green bars indicate features that push the prediction higher. The length of the bar shows the magnitude of the feature's impact.
 
-In SHAP value plots, the sum of all feature contributions along with the base value (not shown in the plot) equals
-the final prediction for the given observation. SHAP values provide a more nuanced and detailed explanation of
-the prediction, attributing the contribution of each feature in a way that sums up to the actual prediction made
-by the model.
+In SHAP value plots, the sum of all feature contributions along with the base value (not shown in the plot) equals the final prediction for the given observation. SHAP values provide a more nuanced and detailed explanation of the prediction, attributing the contribution of each feature in a way that sums up to the actual prediction made by the model.
 
 ```{r}
 # Shapley Values Plot for a single prediction
