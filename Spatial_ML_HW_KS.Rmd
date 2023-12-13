@@ -20,6 +20,8 @@ library(geosphere)
 library(randomForest)
 library(pROC)
 library(caret)
+library(viridis)
+library(ggridges)
 library(xgboost)
 library(DALEX)
 
@@ -147,6 +149,104 @@ accident_data <- accident_data %>%
   mutate_if(is.character, as.factor)
 
 summary(accident_data)
+```
+EDA
+```{r}
+ggplot(accident_data, aes(x=factor(Accident_Severity), fill=factor(Accident_Severity))) +
+  geom_bar(stat="count") +
+  scale_fill_manual(values=c("0"="blue", "1"="red"),
+                    labels=c("0"="Slight", "1"="Severe or Fatal"),
+                    name="Accident Severity") +  # This line sets manual colors and labels
+  labs(x="Accident Severity",
+       y="Count",
+       title="Distribution of Accident Severity") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(accident_data, aes(x=Speed_limit, fill=..count..)) +
+  geom_histogram(binwidth=10, color="black", show.legend=FALSE) +  
+  scale_fill_viridis(name="Frequency", option="D") +  
+  labs(x="Speed Limit",
+       y="Frequency",
+       title="Distribution of Speed Limits") +
+  theme_minimal()
+```
+```{r}
+ggplot(accident_data, aes(x = Weather_Conditions, fill = Weather_Conditions)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Accidents in Different Weather Conditions", x = "Weather Conditions", y = "Count")
+```
+
+```{r}
+day_mapping <- setNames(c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'),
+                        c('poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota', 'niedziela'))
+
+accident_data$Day_of_Week <- day_mapping[accident_data$Day_of_Week]
+```
+
+```{r}
+ggplot(accident_data, aes(x=Day_of_Week, fill=factor(Accident_Severity))) +
+  geom_bar(position="dodge") +
+  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
+                    labels=c("0"="Slight", "1"="Severe or Fatal"),
+                    name="Accident Severity") +
+  labs(x="Day of the Week",
+       y="Count",
+       title="Day of the Week vs Accident Severity") +
+  theme_light() +
+  theme(
+    panel.background = element_rect(fill = "white", colour = "white"),
+    plot.background = element_rect(fill = "white", colour = NA),
+    legend.background = element_rect(fill = "white", colour = NA),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+```{r}
+ggplot(accident_data, aes(x=TimeOfDay, fill=factor(Accident_Severity))) +
+  geom_bar(position="dodge") +
+  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
+                    labels=c("0"="Slight", "1"="Severe or Fatal"),
+                    name="Accident Severity") +
+  labs(x="Time of Day",
+       y="Count",
+       title="Time of Day vs Accident Severity") +
+  theme_light() +
+  theme(
+    panel.background = element_rect(fill = "white", colour = "white"),
+    plot.background = element_rect(fill = "white", colour = NA),
+    legend.background = element_rect(fill = "white", colour = NA),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+```
+
+```{r}
+ggplot(accident_data, aes(x=DistanceToHotspot)) +
+  geom_density(fill="skyblue", alpha=0.5) +
+  xlim(0, 2) +
+  labs(x="Distance to Hotspot",
+       y="Density",
+       title="Empirical Density Function of Distance to Hotspot") +
+  theme_minimal()
+```
+```{r}
+ggplot(accident_data, aes(x=factor(Accident_Severity), y=DistanceToHotspot)) +
+  geom_violin(trim=FALSE, fill="skyblue", color="black") +
+  scale_x_discrete(name="Accident Severity", 
+                   labels=c("0"="Slight", "1"="Severe or Fatal")) + 
+  theme_minimal()
+```
+
+```{r}
+ggplot(accident_data, aes(x=DistanceToHotspot, fill=factor(Accident_Severity))) +
+  geom_density(alpha=0.5) +
+  facet_grid(Accident_Severity ~ .) +
+  scale_x_continuous(limits=c(0, 2)) +  
+  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
+                    labels=c("0"="Slight", "1"="Severe or Fatal"),
+                    name="Accident Severity") +  
+  theme_minimal()
 ```
 
 ```{r}
