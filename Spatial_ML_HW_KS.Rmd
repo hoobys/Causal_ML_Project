@@ -21,7 +21,7 @@ The methodology of the analysis involves several stages:
 
 The outcome of this analysis aims to shed light on the spatial dynamics of road accidents and their outcomes, potentially offering insights into road safety enhancement strategies.
 
-```{r}
+```{r warning=FALSE, message=FALSE}
 # Load libraries
 library(tidyverse)
 library(readr)
@@ -493,3 +493,15 @@ sv <- predict_parts(
 )
 plot(sv)
 ```
+
+## General Summary of Results
+
+The comprehensive analysis conducted has led to several notable findings. The DBSCAN clustering method effectively identified 29 distinct clusters, predominantly located near highly populated areas such as major cities and urban agglomerations. This pattern aligns with the intuitive understanding that busier areas are likely to witness a higher frequency of traffic incidents.
+
+The exploratory data analysis (EDA) further refined our insights, revealing that minor accidents tend to cluster around these hotspots, while severe or fatal accidents are dispersed over a range of distances from these focal points. Patterns across the days of the week and times of day were also observed, with Fridays and afternoons being particularly prone to higher accident counts. Interestingly, the severity of accidents did not show a significant variation with these temporal factors.
+
+The peak in accident distribution at a speed limit of 30 units suggests that most accidents occur within urban speed zones, where traffic density is high and numerous variables may contribute to accidents.
+
+Through the application of the XGBoost model, we were able to quantify the relationship between these factors and accident severity. The model's accuracy and the AUC score indicate a robust predictive capability, particularly in distinguishing between minor and severe accident outcomes.
+
+In conclusion, the spatial analysis of accident severity in proximity to hotspots has provided valuable insights, with the potential to inform targeted road safety measures and urban planning strategies. Future work may delve deeper into the causal factors and explore interventions to mitigate risks, especially in identified high-risk zones.
