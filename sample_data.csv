@@ -1,0 +1,1001 @@
+"Longitude","Latitude","Accident_Severity","Weather_Conditions","Light_Conditions","Road_Surface_Conditions","Speed_limit","Urban_or_Rural_Area","Number_of_Casualties","Number_of_Vehicles","Day_of_Week","Month","TimeOfDay","Cluster","DistanceToCenter"
+-0.080107,51.650061,"1","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",3,2,"sobota","08","Night",1,17337.8592062164
+-0.173845,51.522425,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Night",1,3412.02287138003
+-0.052969,51.514096,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,3,"niedziela","01","Night",1,6381.15416921023
+-0.060658,51.624832,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Night",1,15080.8755445026
+-0.353876,51.438762,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Night",1,16164.3618443462
+-0.435377,51.525305,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",2,2,"niedziela","01","Night",1,20542.2782435079
+-0.15815,51.522,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Night",1,2786.13390835444
+-0.067992,51.598425,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",4,2,"niedziela","01","Night",1,12180.4997981129
+-0.367663,51.548392,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Night",1,16573.3017217188
+-0.062676,51.482332,"0","Fine no high winds","Darkness - no lighting","Wet or damp",30,"Urban",3,1,"niedziela","01","Morning",1,5798.0209578637
+0.212939,51.579345,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",20,"Urban",1,2,"niedziela","01","Night",1,26139.0877256375
+-0.185647,51.457591,"0","Other","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Morning",1,5530.07429552878
+-0.201598,51.483916,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,3,"niedziela","01","Afternoon",1,4472.57750855459
+-0.460544,51.458645,"0","Raining no high winds","Darkness - lights unlit","Wet or damp",30,"Rural",1,1,"niedziela","01","Night",1,22548.6982272351
+-0.196517,51.576102,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,9368.34610837241
+-0.267737,51.600824,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,14286.656574721
+0.043004,51.600682,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,17076.1645672713
+0.151477,51.54011,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,20825.3794163639
+0.122309,51.557907,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",2,2,"niedziela","01","Afternoon",1,19430.5925768957
+-0.374592,51.455057,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,16864.5724095569
+-0.127832,51.487977,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Rural",1,2,"niedziela","01","Evening",1,1575.88870448254
+-0.013419,51.469098,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"niedziela","01","Evening",1,9510.50605668851
+-0.133147,51.400113,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,11037.5229994166
+-0.022419,51.590472,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,13107.3699532413
+0.090051,51.357496,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,22530.7611750673
+-0.229039,51.370306,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Evening",1,15562.9785228736
+-0.28521,51.501085,"0","Raining no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"niedziela","01","Evening",1,9935.93563427973
+-0.316061,51.555307,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,13589.4478636444
+-0.377391,51.542502,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Night",1,17013.9394065426
+-0.123411,51.500946,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",3,3,"niedziela","01","Evening",1,1294.93537344074
+-0.102082,51.546106,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",5,2,"niedziela","01","Evening",1,5912.3045519544
+-0.073012,51.500219,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"niedziela","01","Evening",1,4772.9737880409
+-0.133968,51.510557,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Night",1,1386.19138032724
+-0.105487,51.457133,"0","Fog or mist","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Night",1,5310.62178430166
+0.113033,51.39809,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",1,2,"niedziela","01","Afternoon",1,20956.9181581754
+-0.181539,51.5283,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Night",1,4255.45148238131
+-0.240453,51.578208,"0","Other","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Night",1,11140.7299059679
+0.1029,51.402859,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,20078.2133311557
+-0.107402,51.382973,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,13148.238762864
+0.027906,51.5924,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,15683.3208887667
+-0.363709,51.550045,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,16377.650118566
+-0.421865,51.495,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,4,"niedziela","01","Afternoon",1,19410.1094570174
+-0.239432,51.500047,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"niedziela","01","Afternoon",1,6762.07244253988
+-0.055062,51.546144,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,7972.09127982055
+-0.172563,51.532837,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,4314.34418708822
+0.172301,51.480732,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,21871.8095387675
+-0.025557,51.511389,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,8173.95665629272
+-0.349811,51.471706,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,14734.2636075571
+-0.066531,51.571603,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,9608.52260746452
+0.036426,51.479394,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",4,2,"poniedziałek","01","Afternoon",1,12551.5979097921
+-0.360856,51.476897,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"poniedziałek","01","Afternoon",1,15379.8330166303
+0.000934,51.543674,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",3,6,"poniedziałek","01","Afternoon",1,11065.0728434613
+-0.076106,51.570412,"0","Unknown","Daylight","Frost or ice",20,"Urban",1,1,"poniedziałek","01","Afternoon",1,9150.11649637445
+-0.37246,51.466448,"0","Fine no high winds","Daylight","Dry",30,"Urban",6,3,"poniedziałek","01","Afternoon",1,16394.2384340577
+-0.084956,51.634493,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,15576.1166345028
+-0.176713,51.526427,"0","Fine no high winds","Darkness - no lighting","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,3882.23872967913
+-0.102227,51.591161,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"poniedziałek","01","Evening",1,10607.5105081009
+-0.08227,51.578247,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,9727.38504907306
+-0.157419,51.422169,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"poniedziałek","01","Afternoon",1,8633.34664974227
+-0.190225,51.603702,"0","Other","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,12114.1676134242
+-0.123804,51.449244,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",2,1,"poniedziałek","01","Afternoon",1,5691.18803124792
+-0.214012,51.464771,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,6295.52347999702
+-0.193004,51.511841,"0","Other","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,3816.083092475
+-0.090264,51.525231,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Night",1,4607.72567556055
+0.098656,51.48594,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,16734.7346951472
+-0.142648,51.591178,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Night",1,10248.4608542426
+-0.019211,51.528099,"0","Other","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"wtorek","01","Night",1,9089.04316432186
+0.26387,51.607961,"0","Fine no high winds","Daylight","Dry",60,"Rural",1,2,"poniedziałek","01","Morning",1,30585.8683961687
+-0.494451,51.473744,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Rural",3,2,"poniedziałek","01","Afternoon",1,24603.4269515776
+-0.148,51.523459,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,3,"wtorek","01","Night",1,2743.00609733506
+-0.437325,51.577846,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"wtorek","01","Morning",1,22255.7924724248
+0.031551,51.398812,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"wtorek","01","Morning",1,16413.8572762373
+0.040759,51.347214,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"wtorek","01","Morning",1,21133.7629842852
+-0.410592,51.47947,"0","Fine no high winds","Daylight","Dry",30,"Urban",3,2,"wtorek","01","Morning",1,18754.5742603092
+-0.139053,51.332491,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"wtorek","01","Morning",1,18549.6148807065
+0.094344,51.451574,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,17211.5039293257
+0.223244,51.512422,"0","Fine no high winds","Darkness - no lighting","Frost or ice",60,"Rural",1,2,"wtorek","01","Night",1,25341.4088713388
+0.143142,51.519219,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",2,2,"wtorek","01","Morning",1,19872.8211832063
+-0.065975,51.584723,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,10882.2062351859
+-0.300841,51.386747,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"wtorek","01","Morning",1,16677.6280774707
+-0.055965,51.416573,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,10951.2888770488
+-0.30131,51.409056,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,3,"poniedziałek","01","Afternoon",1,14927.8390553491
+-0.064299,51.471208,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,6209.87485441829
+-0.087388,51.476893,"0","Fine no high winds","Daylight","Dry",20,"Urban",3,2,"wtorek","01","Afternoon",1,4514.30513235946
+0.183946,51.573684,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,24038.6607774067
+0.023878,51.527723,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,11915.6845789455
+-0.283069,51.561843,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,12015.8405266773
+-0.183523,51.496587,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,2900.66182650454
+-0.135064,51.554279,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"wtorek","01","Afternoon",1,6158.77627024037
+0.102477,51.37481,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Afternoon",1,21885.5953528451
+0.181652,51.567971,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",2,2,"wtorek","01","Afternoon",1,23677.516423161
+-0.120946,51.382112,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,2,"wtorek","01","Afternoon",1,13105.4337913925
+-0.371408,51.467692,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"wtorek","01","Afternoon",1,16292.6300444349
+-0.24185,51.579398,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"wtorek","01","Afternoon",1,11304.6332366232
+-0.266951,51.526625,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Afternoon",1,9190.94462653526
+-0.392631,51.55611,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",2,2,"poniedziałek","01","Evening",1,18489.6796686045
+-0.261261,51.615386,"0","Other","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,15356.1243891828
+0.017642,51.406157,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,15149.8314502713
+-0.294446,51.573968,"0","Other","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,13455.5509328763
+-0.028623,51.376818,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,15719.2292477238
+-0.199645,51.591887,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,11074.8537063468
+-0.054039,51.390822,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"wtorek","01","Afternoon",1,13507.7284891637
+-0.220052,51.535186,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,4,"wtorek","01","Evening",1,6742.23853502605
+-0.096655,51.371828,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"wtorek","01","Evening",1,14512.7894915245
+-0.12977,51.465257,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Evening",1,3861.27953790034
+0.11022,51.56478,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,18925.3405287732
+-0.129903,51.430277,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Night",1,7707.87152219248
+-0.094213,51.478983,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Evening",1,3991.5452840967
+-0.289678,51.412483,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,14075.9009612018
+-0.173431,51.514775,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,2796.83012924183
+-0.422704,51.466505,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,3,"środa","01","Morning",1,19804.484866262
+-0.157718,51.521993,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Night",1,2773.43299445393
+-0.113332,51.587923,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Morning",1,10081.3962972915
+0.013494,51.478621,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,11007.7051881765
+-0.125018,51.598631,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Morning",1,11139.1957790021
+-0.072907,51.570989,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,9317.42599797909
+-0.08129,51.526074,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,5159.15385628098
+-0.167949,51.407046,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,10407.6624181669
+-0.042165,51.510589,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"środa","01","Morning",1,7025.32936260207
+0.141123,51.580677,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",2,2,"wtorek","01","Afternoon",1,21594.7180064526
+-0.416678,51.578109,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,20961.5012032106
+-0.093573,51.504691,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,3,"środa","01","Morning",1,3403.44781961092
+0.109228,51.527748,"0","Unknown","Daylight","Wet or damp",30,"Urban",1,1,"środa","01","Morning",1,17684.6881709434
+-0.476211,51.537083,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,23542.7897823606
+-0.121181,51.467547,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,3795.488765993
+-0.096003,51.446368,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,6677.6714413266
+0.175308,51.583197,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,23871.1019899023
+-0.278929,51.610341,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,15598.168496422
+0.140211,51.530514,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"środa","01","Afternoon",1,19851.0510954399
+-0.106555,51.326844,"0","Unknown","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,19333.2740349907
+0.152176,51.447919,"0","Fine no high winds","Daylight","Wet or damp",50,"Urban",1,2,"środa","01","Afternoon",1,21169.8383330245
+-0.405746,51.519331,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Afternoon",1,18420.7066869478
+-0.056612,51.519912,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,6344.08391340378
+-0.149137,51.591371,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,10282.1348910687
+-0.121937,51.620793,"0","Fine no high winds","Daylight","Dry",40,"Urban",2,2,"środa","01","Afternoon",1,13615.0737501648
+-0.100324,51.54329,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,5697.40853554479
+-0.413093,51.560885,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,20002.2273930671
+-0.275983,51.615693,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,15955.3678445547
+-0.214414,51.362171,"0","Other","Darkness - lights lit","Dry",40,"Urban",2,3,"środa","01","Afternoon",1,16054.638637027
+0.123757,51.458869,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",3,2,"środa","01","Afternoon",1,18952.689480568
+-0.36084,51.585705,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,17965.234011884
+-0.083364,51.58312,"0","Raining no high winds","Darkness - lights unlit","Wet or damp",20,"Urban",1,2,"środa","01","Morning",1,10190.7820348881
+0.085168,51.559652,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",2,2,"środa","01","Afternoon",1,17106.0656033024
+-0.19059,51.430869,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"środa","01","Afternoon",1,8314.81302128044
+0.18199,51.463465,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"środa","01","Night",1,22799.7379706776
+-0.471053,51.583416,"0","Raining no high winds","Darkness - no lighting","Wet or damp",50,"Rural",1,3,"środa","01","Afternoon",1,24647.7609910148
+-0.159904,51.435518,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,7189.34920135888
+-0.247818,51.615636,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,14900.3463627416
+-0.122182,51.555332,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"środa","01","Evening",1,6404.70581417238
+-0.114725,51.393613,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"środa","01","Evening",1,11894.5016143593
+-0.177667,51.412144,"0","Fine no high winds","Darkness - no lighting","Frost or ice",30,"Urban",3,1,"czwartek","01","Night",1,9995.0954066884
+-0.323613,51.479338,"0","Other","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"czwartek","01","Night",1,12788.7051718891
+-0.21317,51.486341,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"czwartek","01","Night",1,5142.6330761169
+-0.139537,51.511814,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"czwartek","01","Night",1,1422.72928153198
+0.068439,51.547089,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",2,3,"czwartek","01","Night",1,15514.335118681
+-0.148403,51.353412,"0","Other","Darkness - lighting unknown","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,16226.0202350492
+-0.154018,51.36735,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",3,2,"niedziela","01","Night",1,14692.3304713448
+-0.083547,51.585641,"0","Fine no high winds","Darkness - lights unlit","Dry",20,"Urban",2,1,"czwartek","01","Morning",1,10443.9479870649
+0.024843,51.549469,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,12835.013248974
+0.152472,51.454209,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,21010.7378665816
+-0.070221,51.5526,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"czwartek","01","Morning",1,7750.4257544304
+0.011894,51.517498,"0","Fine no high winds","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,10847.9802589346
+-0.015361,51.573537,"0","Fog or mist","Darkness - lights lit","Frost or ice",30,"Urban",1,2,"czwartek","01","Morning",1,12056.6025888782
+-0.100454,51.585197,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,10002.2218908497
+-0.469916,51.505529,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,22743.3294554797
+0.117682,51.554573,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,19006.0261454748
+-0.381294,51.489411,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",3,2,"czwartek","01","Morning",1,16629.1813691904
+-0.143866,51.522314,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,2586.13137073247
+-0.241522,51.393246,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,13663.8606852557
+-0.287059,51.382499,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"czwartek","01","Morning",1,16432.4429184101
+-0.332035,51.58395,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,16203.0079543876
+-0.2269,51.540775,"0","Other","Daylight","Frost or ice",30,"Urban",1,1,"czwartek","01","Morning",1,7496.70642800364
+-0.046027,51.373063,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,15528.4298942859
+-0.007575,51.533747,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,10069.8265459862
+-0.121453,51.559008,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,6815.37881146558
+-0.074807,51.399439,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,12031.7465403829
+0.183718,51.568922,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"czwartek","01","Morning",1,23846.985350162
+-0.200772,51.508543,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Morning",1,4214.55748397545
+-0.110795,51.562074,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"czwartek","01","Morning",1,7331.31740446218
+-0.259202,51.552139,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"czwartek","01","Morning",1,10044.0197746817
+0.181804,51.592249,"0","Fine no high winds","Daylight","Dry",30,"Urban",3,2,"czwartek","01","Morning",1,24689.3317043514
+0.231167,51.568388,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,26957.6404479157
+-0.319628,51.560304,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,14069.3500123763
+0.026988,51.487381,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,11775.5723723973
+0.144769,51.538524,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,20333.7942111971
+-0.106294,51.381966,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,13272.5703500693
+-0.004864,51.631989,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"środa","01","Evening",1,17568.6971204072
+-0.059269,51.409883,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,11467.249432163
+-0.42318,51.569564,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Afternoon",1,20999.2043313204
+-0.117431,51.338171,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"czwartek","01","Afternoon",1,17996.4092262084
+-0.119527,51.500794,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Afternoon",1,1559.19571103211
+-0.016683,51.450268,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,10242.3248515345
+0.051406,51.492262,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,13416.2537894856
+-0.28762,51.382867,"0","Other","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,16424.0157355964
+-0.05168,51.513895,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,2,"czwartek","01","Afternoon",1,6461.68496633472
+0.030606,51.487768,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,12020.1597811659
+-0.353601,51.494421,"0","Fine no high winds","Darkness - lights lit","Dry",70,"Urban",1,2,"czwartek","01","Afternoon",1,14683.2401098071
+0.177049,51.480644,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",1,3,"czwartek","01","Afternoon",1,22200.4125050945
+-0.072064,51.584104,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"czwartek","01","Afternoon",1,10623.6481865846
+-0.149135,51.477704,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,2436.24099837173
+0.06789,51.550876,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",1,2,"czwartek","01","Afternoon",1,15628.5333830776
+-0.010499,51.565901,"0","Fine no high winds","Daylight","Dry",20,"Urban",2,2,"czwartek","01","Afternoon",1,11748.4065362996
+-0.126571,51.504684,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,1227.74275486127
+-0.008164,51.397965,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,14588.5727975532
+-0.215303,51.57549,"0","Raining no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,9906.5488750592
+0.059008,51.520276,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,14115.0523536933
+-0.147665,51.577859,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"czwartek","01","Afternoon",1,8774.84824288878
+-0.096887,51.604923,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"czwartek","01","Afternoon",1,12182.9175307703
+-0.11228,51.595909,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",2,1,"czwartek","01","Evening",1,10967.8796450134
+-0.35564,51.449757,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,15808.1335877601
+-0.097899,51.355661,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,16258.265735873
+0.146379,51.572758,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Evening",1,21576.9222393463
+-0.05651,51.539244,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"czwartek","01","Evening",1,7410.21618581657
+-0.24714,51.381639,"0","Other","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,14979.3663980546
+-0.161944,51.416934,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,9253.84156170296
+-0.029917,51.657412,"0","Other","Darkness - lights lit","Frost or ice",40,"Urban",3,2,"czwartek","01","Evening",1,19248.156195252
+-0.110026,51.53886,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,4943.52566437257
+-0.295306,51.597271,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"czwartek","01","Evening",1,15238.6156775729
+-0.38414,51.588097,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Evening",1,19479.5511914947
+-0.042138,51.612025,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",1,1,"czwartek","01","Evening",1,14339.5661761117
+-0.080779,51.579391,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",3,3,"piątek","01","Night",1,9886.55698094516
+-0.43165,51.579209,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,21956.0550588969
+-0.367483,51.45262,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Morning",1,16477.2092463488
+-0.062652,51.588176,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,11329.8112211864
+-0.244499,51.555607,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Evening",1,9490.56813644116
+-0.261758,51.416839,"1","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"czwartek","01","Morning",1,12371.0803597406
+0.045852,51.51619,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,2,"czwartek","01","Morning",1,13144.3568206059
+-0.043742,51.665378,"0","Other","Daylight","Frost or ice",30,"Urban",1,2,"piątek","01","Morning",1,19713.53354629
+0.10169,51.483008,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",2,5,"piątek","01","Morning",1,16976.1268596196
+-0.099008,51.578339,"0","Other","Daylight","Dry",20,"Urban",1,2,"piątek","01","Morning",1,9304.9193394558
+-0.150224,51.50416,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Morning",1,806.748190348567
+-0.131027,51.427417,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Morning",1,8016.78769980161
+-0.115201,51.619516,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Afternoon",1,13529.3276664884
+-0.369588,51.478368,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,1,"czwartek","01","Afternoon",1,15952.7390463953
+-0.14864,51.649723,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,16772.0684590249
+-0.082493,51.418449,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"piątek","01","Morning",1,9879.01870795641
+-0.350393,51.527378,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,14785.0007151463
+-0.169445,51.463185,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Morning",1,4433.31784080536
+-0.1187,51.443857,"0","Raining no high winds","Darkness - lights unlit","Wet or damp",20,"Urban",1,2,"piątek","01","Afternoon",1,6357.64198972762
+-0.100423,51.537446,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Afternoon",1,5142.68600843705
+-0.073503,51.567132,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Afternoon",1,8929.59942814225
+-0.128687,51.583133,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"piątek","01","Afternoon",1,9397.14776997434
+-0.018946,51.574047,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"piątek","01","Afternoon",1,11917.111985417
+-0.189495,51.534898,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,5172.30095055077
+-0.263373,51.491861,"0","Raining + high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Afternoon",1,8459.74904784484
+-0.243307,51.549115,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,8963.48676571976
+-0.215083,51.525848,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,5880.95377978874
+-0.234667,51.492871,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Evening",1,6469.03621833074
+-0.2533,51.506639,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,7767.03524991065
+-0.281067,51.415865,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,13383.2978480138
+0.125922,51.489945,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,18587.3630228422
+-0.352574,51.554835,"0","Raining + high winds","Daylight","Dry",30,"Urban",1,3,"piątek","01","Afternoon",1,15856.564077105
+0.084486,51.541589,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,3,"piątek","01","Afternoon",1,16376.0416416372
+-0.130763,51.564192,"0","Raining no high winds","Darkness - lights unlit","Wet or damp",30,"Urban",1,1,"piątek","01","Evening",1,7284.92951790729
+0.073088,51.525604,"0","Raining no high winds","Darkness - lights lit","Wet or damp",40,"Rural",2,1,"piątek","01","Evening",1,15180.8710137442
+-0.183565,51.48103,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Evening",1,3522.44847374636
+-0.198727,51.480005,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,1,"piątek","01","Evening",1,4478.84291510451
+-0.192586,51.413094,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",3,2,"piątek","01","Afternoon",1,10201.7692091065
+0.17467,51.587975,"0","Raining no high winds","Darkness - lights lit","Wet or damp",50,"Urban",1,2,"piątek","01","Evening",1,24043.3073303287
+0.048112,51.42838,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,15349.1773208732
+-0.102095,51.594306,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"piątek","01","Evening",1,10948.3379174276
+0.083615,51.595112,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,18916.6765542219
+0.014312,51.408912,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,14771.5416419136
+-0.284737,51.467625,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",2,3,"czwartek","01","Afternoon",1,10506.4458842239
+0.09324,51.487206,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,16348.5761456215
+-0.108967,51.383358,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,13086.7185455441
+0.110491,51.467742,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,17839.3160949965
+-0.057684,51.596366,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Night",1,12294.6310411385
+-0.027718,51.48139,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Evening",1,8154.18530098134
+-0.431909,51.491987,"0","Raining no high winds","Darkness - no lighting","Wet or damp",30,"Urban",1,1,"sobota","01","Night",1,20117.0968636635
+-0.477759,51.507969,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Night",1,23295.8297424577
+-0.176751,51.61923,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Night",1,13587.2872912518
+0.112427,51.381825,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,21950.4231500545
+-0.115056,51.619514,"0","Other","Daylight","Wet or damp",30,"Urban",1,2,"sobota","01","Morning",1,13530.4795316425
+0.067619,51.557625,"0","Other","Daylight","Dry",30,"Urban",2,4,"sobota","01","Morning",1,15902.7382675527
+-0.348101,51.554862,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"sobota","01","Morning",1,15573.12744314
+-0.006937,51.426182,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Evening",1,12389.0008835994
+-0.313203,51.488271,"0","Fine no high winds","Daylight","Dry",40,"Urban",3,2,"sobota","01","Morning",1,11936.2472536143
+-0.096006,51.570737,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,2,"sobota","01","Afternoon",1,8581.94633501062
+-0.093121,51.384271,"0","Other","Daylight","Wet or damp",30,"Urban",1,2,"sobota","01","Morning",1,13224.2787795735
+-0.296252,51.598993,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,15421.8150547127
+-0.311407,51.48231,"0","Other","Daylight","Wet or damp",30,"Urban",11,2,"sobota","01","Afternoon",1,11899.3168035434
+-0.105859,51.357679,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Afternoon",1,15941.7664385165
+-0.080673,51.62642,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",1,2,"sobota","01","Afternoon",1,14790.5942813571
+-0.03118,51.568138,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Afternoon",1,10852.7437327304
+-0.060609,51.649651,"0","Other","Darkness - lights lit","Wet or damp",40,"Urban",1,1,"sobota","01","Afternoon",1,17675.3191859215
+-0.339344,51.522006,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Afternoon",1,13917.0054770415
+-0.245666,51.615244,"0","Fine no high winds","Darkness - lights unlit","Wet or damp",30,"Urban",1,1,"sobota","01","Morning",1,14789.4698653085
+0.084859,51.489783,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Evening",1,15747.7202517996
+-0.248368,51.556294,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Afternoon",1,9742.62922869303
+-0.026168,51.500608,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"sobota","01","Afternoon",1,8019.29911014567
+-0.063901,51.589365,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Afternoon",1,11404.5996926792
+-0.064844,51.526343,"0","Other","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"sobota","01","Afternoon",1,6136.62992976822
+-0.080243,51.485859,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",2,2,"sobota","01","Afternoon",1,4518.73683763214
+0.027066,51.502128,"0","Fine no high winds","Daylight","Wet or damp",40,"Urban",3,2,"sobota","01","Afternoon",1,11711.2045028343
+-0.198899,51.519485,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"sobota","01","Afternoon",1,4555.90593775823
+0.033158,51.538623,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Evening",1,12896.7388672456
+-0.070461,51.594689,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,11731.384439195
+-0.482213,51.603703,"0","Fine no high winds","Darkness - lights lit","Dry",60,"Rural",1,3,"sobota","01","Afternoon",1,26278.6449292294
+-0.095687,51.398611,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Afternoon",1,11637.7696298255
+-0.378359,51.438114,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,17750.1729837802
+0.018656,51.406319,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,15188.9973493579
+-0.248974,51.574289,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Night",1,11181.7524349293
+-0.010674,51.522199,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Night",1,9445.37960113574
+-0.114266,51.345314,"0","Other","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"niedziela","01","Night",1,17227.9901287763
+-0.371367,51.573892,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,3,"niedziela","01","Night",1,17939.4268459289
+0.053698,51.552834,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,1,"piątek","01","Morning",1,14805.7142517406
+-0.452395,51.482548,"0","Raining no high winds","Daylight","Wet or damp",50,"Urban",2,3,"niedziela","01","Morning",1,21602.3151661336
+-0.047297,51.4917,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Morning",1,6605.80267896066
+-0.000239,51.556374,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"niedziela","01","Morning",1,11697.5239340843
+-0.256734,51.552552,"0","Fine no high winds","Daylight","Dry",40,"Urban",1,1,"niedziela","01","Morning",1,9933.66121198176
+-0.359052,51.418781,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,3,"niedziela","01","Morning",1,17518.6715469294
+-0.05926,51.430477,"0","Other","Daylight","Wet or damp",20,"Urban",1,1,"niedziela","01","Morning",1,9549.9271096248
+-0.083182,51.405421,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",2,2,"niedziela","01","Morning",1,11196.3359604812
+-0.114317,51.386052,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",2,2,"niedziela","01","Afternoon",1,12730.5152580356
+-0.064996,51.614562,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,13909.1096996496
+-0.126889,51.468808,"0","Other","Darkness - lighting unknown","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,3529.96045684503
+-0.459058,51.494236,"0","Fine no high winds","Daylight","Wet or damp",40,"Rural",1,2,"niedziela","01","Afternoon",1,21989.1582499326
+-0.174131,51.482862,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,2876.70187334114
+-0.131322,51.427242,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,8034.29534924545
+-0.121831,51.472774,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,3,"sobota","01","Evening",1,3244.57591216381
+-0.120835,51.426894,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,8170.91827340531
+-0.456792,51.518665,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,1,"niedziela","01","Afternoon",1,21927.8124539087
+-0.427309,51.453977,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,20418.8118402188
+-0.044347,51.557207,"0","Other","Darkness - lights lit","Wet or damp",20,"Urban",4,2,"niedziela","01","Afternoon",1,9350.35866363238
+-0.391616,51.498995,"0","Other","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,17307.620505321
+-0.138623,51.527177,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"niedziela","01","Afternoon",1,3131.82142921216
+-0.077093,51.574385,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"niedziela","01","Afternoon",1,9503.73949391606
+0.141237,51.493983,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",3,2,"niedziela","01","Afternoon",1,19628.1801450056
+-0.046172,51.544917,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,8362.25155172112
+-0.257439,51.492582,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,8042.74982542223
+-0.175505,51.610668,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,12634.3380367398
+-0.266591,51.592984,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,13555.2345493243
+-0.189606,51.44848,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,6536.8862981132
+-0.042328,51.489998,"0","Unknown","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,6972.79090500705
+-0.173166,51.481768,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Rural",1,2,"niedziela","01","Evening",1,2904.54169467829
+-0.162553,51.43403,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,4,"niedziela","01","Night",1,7386.00100769397
+-0.09665,51.38235,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Night",1,13371.5775026064
+-0.068317,51.54987,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"niedziela","01","Evening",1,7607.25215946599
+-0.059099,51.464827,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,6891.41362446884
+-0.165123,51.52067,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,2890.28450070318
+-0.215015,51.557051,"0","Unknown","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,8201.12571719599
+-0.292071,51.529511,"0","Fog or mist","Darkness - lights lit","Wet or damp",40,"Urban",2,1,"poniedziałek","01","Night",1,10942.0135853492
+-0.028087,51.469525,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,3,"niedziela","01","Evening",1,8547.50763523854
+-0.012129,51.574831,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Night",1,12318.1791079542
+-0.129249,51.513179,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Night",1,1793.01915403654
+-0.041181,51.399061,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,13147.0887577809
+-0.272644,51.509533,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",3,1,"poniedziałek","01","Morning",1,9135.77799471412
+-0.061729,51.548773,"0","Other","Daylight","Wet or damp",20,"Urban",1,2,"niedziela","01","Morning",1,7833.44656891053
+-0.367688,51.523483,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,15878.6224862731
+-0.377582,51.431629,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"poniedziałek","01","Morning",1,17990.7706981913
+-0.112986,51.47425,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"poniedziałek","01","Morning",1,3416.04924569739
+-0.201443,51.575638,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,9464.73274100993
+0.099741,51.52522,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,16988.6913983063
+-0.231045,51.444976,"0","Fine no high winds","Daylight","Wet or damp",40,"Urban",1,3,"poniedziałek","01","Morning",1,8634.92346959402
+-0.124515,51.53019,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,3662.02424449455
+-0.06884,51.588637,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,4,"poniedziałek","01","Morning",1,11174.4938766159
+-0.159753,51.521576,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,2790.56462100467
+-0.178521,51.484729,"0","Unknown","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,3003.30323658239
+-0.210561,51.420474,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,9967.01367868662
+-0.049242,51.398835,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,12880.5076352142
+-0.216843,51.595117,"0","Fog or mist","Daylight","Frost or ice",50,"Urban",1,1,"piątek","01","Morning",1,11880.6035251792
+-0.114843,51.513039,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,2430.59376098646
+-0.145733,51.526031,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,3008.1474788593
+-0.11284,51.467323,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,4071.13974660508
+-0.212208,51.591809,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",2,2,"poniedziałek","01","Morning",1,11409.9708940336
+-0.129178,51.507873,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,1312.68535983425
+-0.05384,51.415818,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,11102.3004737691
+-0.122756,51.450217,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,5602.31545764887
+-0.045811,51.442214,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Afternoon",1,9191.67531863479
+-0.394829,51.534649,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"niedziela","01","Afternoon",1,17964.3075379967
+-0.398634,51.528946,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,3,"poniedziałek","01","Afternoon",1,18095.4076539869
+0.019326,51.476992,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,11441.334261433
+-0.152059,51.515789,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,1985.90681515656
+-0.085897,51.605283,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,12437.2172126149
+0.083581,51.565976,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,17295.1829557451
+-0.141561,51.401775,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,10835.9485968366
+-0.054344,51.617084,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,14461.818147661
+-0.111067,51.426557,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,8354.85674539443
+-0.204655,51.45006,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,6983.94260746135
+-0.053289,51.550521,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Evening",1,8389.3613911973
+0.012192,51.49483,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,10687.1883035904
+-0.189903,51.510084,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Evening",1,3545.48767084731
+-0.161467,51.410902,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,9913.60763020196
+-0.150099,51.485903,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Rural",1,2,"poniedziałek","01","Afternoon",1,1577.68400844908
+-0.374467,51.523398,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,16340.0167885548
+-0.305197,51.408932,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,15137.8615804829
+-0.300526,51.530893,"0","Raining + high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,1,"poniedziałek","01","Afternoon",1,11546.5024730364
+-0.302671,51.399453,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Evening",1,15733.4342345383
+-0.057567,51.54151,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Evening",1,7507.75882629606
+-0.170569,51.377411,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,13693.7530431671
+-0.05981,51.651436,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,17881.255632907
+-0.156765,51.613342,"0","Raining no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,12757.3544347314
+-0.096977,51.499081,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Afternoon",1,3110.69600255485
+-0.075253,51.399086,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,12056.1086117674
+-0.153325,51.470216,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Afternoon",1,3313.74955974104
+-0.409502,51.601752,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Evening",1,21766.007646992
+-0.092868,51.493979,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,3443.44598980262
+-0.272332,51.54442,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,10348.817284787
+-0.137232,51.462318,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,1,"poniedziałek","01","Evening",1,4108.88399994473
+-0.06526,51.570953,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",3,2,"poniedziałek","01","Evening",1,9596.22511118611
+0.103021,51.493146,"0","Unknown","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,16984.5346818912
+-0.318541,51.601473,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Evening",1,16715.228920109
+0.035985,51.388574,"0","Fine no high winds","Daylight","Wet or damp",30,"Rural",1,2,"poniedziałek","01","Morning",1,17426.8452311344
+0.11349,51.401769,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,20766.4544825476
+-0.173982,51.511816,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,2636.50410133827
+-0.119122,51.486129,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,2,"niedziela","01","Morning",1,2138.84753039772
+-0.175243,51.527123,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,3881.68141825585
+-0.040954,51.66632,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,19878.8880874988
+-0.037711,51.674449,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Night",1,20805.0068306698
+-0.127447,51.423493,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,8477.47420254013
+-0.028101,51.569255,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Afternoon",1,11091.464264972
+-0.109004,51.612223,"0","Fine no high winds","Daylight","Dry",40,"Urban",1,2,"wtorek","01","Morning",1,12794.8069867412
+0.020837,51.530653,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,11805.3167736928
+-0.004608,51.591699,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,14018.226083189
+-0.113925,51.521297,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Afternoon",1,3137.51838390311
+-0.326061,51.475416,"0","Fine no high winds","Darkness - no lighting","Dry",30,"Urban",1,1,"wtorek","01","Morning",1,13037.7177304637
+0.174645,51.596519,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,24446.5846892797
+0.047087,51.575881,"1","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,2,"wtorek","01","Morning",1,15626.7380543895
+-0.136244,51.430018,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,7701.8027305715
+-0.19241,51.526849,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"poniedziałek","01","Morning",1,4668.2865084963
+-0.243319,51.455142,"1","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,8569.77353993595
+-0.019773,51.445374,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"wtorek","01","Morning",1,10366.3535368897
+-0.027505,51.566368,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Morning",1,10897.7617667275
+-0.240887,51.533341,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Evening",1,7846.63587791388
+-0.360225,51.574726,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,17304.56772924
+-0.093524,51.374565,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"wtorek","01","Morning",1,14264.9697296851
+-0.071046,51.485348,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,5142.14661200698
+-0.122377,51.459473,"0","Fine no high winds","Daylight","Dry",20,"Urban",2,2,"wtorek","01","Morning",1,4615.2050203976
+-0.172171,51.423749,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,8649.09142621935
+0.171707,51.565188,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,22926.3866046067
+-0.156466,51.517297,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"wtorek","01","Morning",1,2262.67690764298
+-0.473237,51.513935,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"wtorek","01","Morning",1,23019.3172949793
+-0.251481,51.539075,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Evening",1,8800.02953803669
+-0.207995,51.526459,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,5500.38280159315
+-0.093309,51.473033,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"wtorek","01","Afternoon",1,4445.15053731718
+-0.041512,51.512376,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,7108.32374605041
+-0.107307,51.507072,"0","Fine no high winds","Darkness - lights unlit","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,2553.16264305842
+-0.11915,51.530914,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,3873.75992796638
+0.141272,51.451716,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,1,"środa","01","Morning",1,20328.1281117434
+0.11977,51.568475,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Morning",1,19693.9343127617
+-0.40623,51.484807,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,18392.3103606717
+-0.208295,51.515133,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,4936.05327848627
+-0.049388,51.425816,"0","Fine no high winds","Daylight","Dry",30,"Urban",4,3,"wtorek","01","Afternoon",1,10378.6587886828
+-0.126146,51.50099,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"wtorek","01","Afternoon",1,1109.07766411028
+-0.358037,51.451139,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,15911.5670833539
+-0.119268,51.563019,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"wtorek","01","Morning",1,7283.75300207621
+-0.290521,51.559344,"1","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,12285.6702795496
+-0.226155,51.541393,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,7499.17965902673
+-0.016102,51.599627,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,14176.7047908642
+0.005699,51.45852,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,11184.2729887013
+0.001457,51.581884,"0","Fine no high winds","Daylight","Dry",30,"Rural",1,2,"wtorek","01","Afternoon",1,13541.0486373244
+0.175072,51.578255,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,23646.747347843
+-0.023234,51.518455,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Afternoon",1,8496.55207048294
+-0.21271,51.409626,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,11108.1687766175
+-0.293769,51.5959,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,1,"wtorek","01","Afternoon",1,15055.1599411942
+-0.00382,51.339169,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,20220.3403433523
+-0.187989,51.44207,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,1,"wtorek","01","Afternoon",1,7110.2785068831
+-0.141046,51.549068,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",2,2,"wtorek","01","Evening",1,5560.94279881899
+0.164181,51.552557,"1","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,22015.3364138805
+-0.134305,51.551659,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"wtorek","01","Afternoon",1,5872.47014756091
+-0.182268,51.549804,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,6298.3798300809
+-0.098502,51.382739,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,13299.8238531881
+-0.075554,51.491178,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"wtorek","01","Afternoon",1,4679.87125382186
+-0.286909,51.482675,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,10218.5166323685
+-0.062023,51.514696,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",2,2,"wtorek","01","Evening",1,5797.54232529713
+0.046918,51.511046,"0","Unknown","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"wtorek","01","Evening",1,13148.0520967086
+-0.078552,51.419824,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"wtorek","01","Evening",1,9858.7502427547
+-0.108416,51.480292,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,3125.08737551164
+-0.070731,51.588309,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Night",1,11083.1632999805
+-0.008861,51.5076,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"środa","01","Night",1,9264.48186797907
+-0.161374,51.434731,"0","Fine no high winds","Darkness - lights unlit","Dry",30,"Urban",1,3,"środa","01","Night",1,7293.8584886225
+-0.41481,51.44086,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Night",1,20007.1648728976
+0.066592,51.576348,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,2,"poniedziałek","01","Night",1,16800.2027937058
+-0.300872,51.409229,"0","Fine no high winds","Darkness - lights unlit","Dry",30,"Urban",1,2,"środa","01","Night",1,14892.3796994617
+-0.206265,51.475085,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Morning",1,5204.23642432617
+0.109436,51.429271,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,19083.9685339047
+-0.125328,51.577055,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"czwartek","01","Afternoon",1,8751.38022511973
+-0.124153,51.48639,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"środa","01","Morning",1,1874.51392536414
+-0.261781,51.582842,"0","Other","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,12481.995910893
+-0.290765,51.506651,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,10351.8771032255
+0.147095,51.465369,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,20381.3290548978
+-0.355061,51.609814,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,19225.0945167281
+0.04086,51.456115,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,13542.8598414886
+-0.019384,51.461015,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"środa","01","Morning",1,9491.71905141508
+-0.077363,51.523491,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,5228.03174133221
+-0.143111,51.491278,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,1,"czwartek","01","Morning",1,876.764393962363
+0.084601,51.357683,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,22247.3318959815
+-0.008166,51.513613,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,2,"środa","01","Night",1,9403.28215759842
+-0.330611,51.445446,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,14386.8737839086
+-0.20132,51.4983,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,4121.24779224382
+-0.292504,51.529518,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"środa","01","Night",1,10970.7835042349
+-0.148945,51.514391,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,1769.77890829586
+0.117944,51.532267,"0","Fine no high winds","Daylight","Dry",40,"Urban",2,2,"środa","01","Morning",1,18372.4681240976
+-0.097827,51.592798,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,10865.132420886
+-0.20964,51.458769,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,6500.13957622888
+-0.094821,51.657675,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,2,"wtorek","01","Morning",1,17948.2454928489
+-0.44321,51.447715,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,21664.0802869547
+-0.117276,51.562358,"0","Other","Darkness - lights lit","Wet or damp",20,"Urban",2,2,"wtorek","01","Afternoon",1,7243.09303847669
+-0.306357,51.459217,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,12238.571885597
+-0.194532,51.571575,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,8852.24349802139
+-0.497771,51.486645,"0","Fine no high winds","Daylight","Dry",70,"Rural",2,3,"środa","01","Morning",1,24706.4567341127
+-0.111518,51.56901,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"środa","01","Morning",1,8059.36732008186
+-0.28487,51.552337,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,11541.1062439637
+-0.273348,51.50235,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,9118.49026320485
+-0.083963,51.486459,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"wtorek","01","Afternoon",1,4253.25727046942
+-0.060012,51.473835,"0","Fine + high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Afternoon",1,6333.5059276845
+0.001221,51.510756,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Rural",1,2,"środa","01","Afternoon",1,9998.80077778867
+-0.129808,51.527667,"0","Raining no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,3286.22720032243
+-0.131369,51.471937,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Afternoon",1,3111.78143765848
+-0.065133,51.441276,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,8352.72903358327
+0.021333,51.476777,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,11582.3702756983
+-0.037612,51.512581,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,7377.46152927757
+-0.121569,51.486168,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,2014.00673321635
+-0.131404,51.449905,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,5525.92899176482
+-0.12798,51.435102,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,7190.74248056416
+-0.024856,51.494291,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Evening",1,8126.82711065629
+-0.186755,51.382339,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,13367.5031914689
+-0.119214,51.616793,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,13193.2335682101
+-0.300289,51.614609,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,16897.3216684183
+-0.080354,51.490087,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,4379.95660969925
+-0.103553,51.54541,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"środa","01","Evening",1,5796.53103692881
+-0.125109,51.494678,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,1261.93500472442
+-0.366771,51.557192,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"wtorek","01","Evening",1,16864.3279411393
+-0.397372,51.51562,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,2,"środa","01","Evening",1,17798.3510769624
+0.145711,51.442012,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,20929.956830073
+-0.017825,51.500288,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Evening",1,8596.75396470505
+-0.188657,51.519687,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Night",1,3969.15196912188
+-0.14591,51.411556,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,9751.15034786121
+-0.253158,51.416081,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,12042.924799974
+-0.103246,51.545855,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,5850.30227280603
+0.184286,51.532579,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,22898.7452773693
+-0.142014,51.518238,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,2,"poniedziałek","01","Evening",1,2128.69886442282
+-0.211295,51.519495,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,5318.50163753325
+0.081864,51.559981,"0","Unknown","Daylight","Dry",20,"Urban",1,2,"wtorek","01","Afternoon",1,16910.5859255222
+-0.100135,51.495895,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"czwartek","01","Morning",1,2914.0878440189
+-0.118078,51.47649,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,3010.38281039876
+-0.125335,51.531282,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Afternoon",1,3759.36694765913
+-0.443517,51.451406,"0","Other","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Morning",1,21579.0130769885
+-0.137748,51.626261,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"wtorek","01","Afternoon",1,14156.6059796393
+-0.19482,51.359982,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,15918.4108631471
+-0.194284,51.530475,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,5037.1780376681
+-0.1477,51.506008,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,867.265334857511
+-0.119411,51.510594,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,2013.27109115525
+-0.129428,51.431348,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,7593.02195218271
+-0.450636,51.513189,"0","Raining no high winds","Daylight","Wet or damp",50,"Urban",1,2,"czwartek","01","Morning",1,21451.6108991091
+-0.017923,51.434911,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Morning",1,11178.5220246672
+-0.07039,51.534977,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,2,"wtorek","01","Evening",1,6360.10209919476
+0.060117,51.560814,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,3,"środa","01","Evening",1,15582.9612678423
+-0.108809,51.533445,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Evening",1,4455.0511442567
+-0.240855,51.593951,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,1,"wtorek","01","Afternoon",1,12586.1618402131
+-0.117901,51.36174,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,15382.7785471492
+-0.09451,51.482225,"0","Unknown","Darkness - no lighting","Data missing or out of range",30,"Urban",1,2,"piątek","01","Afternoon",1,3782.68126110517
+-0.207051,51.480762,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,4958.75029032824
+-0.071079,51.600544,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,3,"czwartek","01","Morning",1,12308.3171906436
+-0.073374,51.563353,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"wtorek","01","Evening",1,8580.84565113509
+-0.424108,51.500965,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,19559.949765788
+0.152815,51.458429,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,20926.2428724998
+-0.014783,51.513905,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"czwartek","01","Afternoon",1,8957.83913085868
+-0.141725,51.397731,"0","Other","Daylight","Wet or damp",20,"Urban",1,1,"czwartek","01","Morning",1,11286.1082927429
+0.009953,51.49307,"0","Other","Daylight","Wet or damp",30,"Rural",1,2,"czwartek","01","Morning",1,10543.071385492
+-0.381122,51.559279,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,17871.7616023452
+-0.129342,51.46516,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,3878.35446071568
+-0.098436,51.363494,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,15395.2751977201
+-0.097291,51.598724,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,11509.6393481242
+-0.093498,51.471957,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"czwartek","01","Afternoon",1,4514.58969266004
+-0.121322,51.471147,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,3,"czwartek","01","Afternoon",1,3423.68072263505
+-0.249411,51.506581,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,7498.46619266289
+-0.202553,51.485279,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,4479.44808655768
+-0.039628,51.442111,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",1,2,"czwartek","01","Afternoon",1,9514.60100362438
+-0.12877,51.355889,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,15969.8185927077
+-0.365609,51.549352,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,16474.9371463586
+-0.347398,51.53444,"0","Raining + high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,14770.8355907361
+-0.114201,51.6436,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,16197.395682355
+-0.171472,51.542082,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,5204.09635879077
+-0.129515,51.513723,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,1837.47153253094
+-0.234837,51.603932,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,13325.1602134046
+-0.23024,51.368975,"0","Raining no high winds","Darkness - no lighting","Wet or damp",30,"Urban",2,1,"czwartek","01","Afternoon",1,15731.9371033779
+-0.193539,51.480105,"0","Raining + high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"czwartek","01","Afternoon",1,4160.22364084559
+-0.209085,51.601473,"1","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,12307.8199670033
+-0.118746,51.568676,"0","Raining + high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"czwartek","01","Afternoon",1,7907.16086199052
+-0.248981,51.514039,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,7605.51747249809
+-0.095992,51.446637,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,6651.71554285089
+-0.186985,51.39835,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",1,2,"czwartek","01","Afternoon",1,11645.7728716116
+-0.170005,51.445568,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,3,"czwartek","01","Afternoon",1,6272.14892873398
+-0.269433,51.506788,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,8880.8151912905
+-0.127068,51.604959,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"czwartek","01","Afternoon",1,11826.8436074717
+-0.371596,51.494762,"0","Raining no high winds","Darkness - lighting unknown","Wet or damp",30,"Urban",2,2,"czwartek","01","Afternoon",1,15928.3567379396
+-0.068987,51.595384,"0","Raining + high winds","Darkness - lights lit","Snow",30,"Urban",1,2,"czwartek","01","Afternoon",1,11844.6783957728
+-0.12597,51.522839,"0","Snowing no high winds","Darkness - lighting unknown","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,2861.25426222797
+0.015653,51.556911,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,12664.8387228061
+0.019978,51.508006,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"czwartek","01","Afternoon",1,11258.0850253273
+-0.073081,51.583941,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,10575.6033463215
+0.077003,51.535607,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,15696.0755098687
+0.035163,51.389487,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Rural",1,1,"czwartek","01","Afternoon",1,17314.6362979738
+-0.21923,51.534094,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,6624.4597419075
+-0.178568,51.555771,"0","Snowing + high winds","Darkness - lights lit","Snow",20,"Urban",1,1,"czwartek","01","Afternoon",1,6799.81527082776
+-0.190296,51.383653,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",1,1,"czwartek","01","Afternoon",1,13285.3021963984
+0.084714,51.442393,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",1,1,"czwartek","01","Afternoon",1,16932.8953161295
+0.113941,51.551673,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",2,2,"czwartek","01","Afternoon",1,18657.9718006244
+-0.176827,51.519954,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",1,1,"czwartek","01","Afternoon",1,3353.88890703681
+-0.187788,51.461671,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,5245.12539529874
+-0.085535,51.552042,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Afternoon",1,7066.31825566281
+-0.206169,51.569236,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Evening",1,8986.50070716462
+-0.195985,51.545789,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",3,2,"czwartek","01","Evening",1,6406.75214545498
+-0.288147,51.468844,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,10685.887657062
+-0.223165,51.503399,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"czwartek","01","Afternoon",1,5653.93038263279
+-0.043937,51.354682,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",2,2,"czwartek","01","Evening",1,17455.9947725584
+0.149595,51.472607,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",2,2,"piątek","01","Night",1,20418.2008822295
+-0.10394,51.546496,"0","Other","Darkness - lights lit","Wet or damp",20,"Urban",2,2,"piątek","01","Night",1,5892.25845375875
+-0.200247,51.492618,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",4,2,"piątek","01","Night",1,4110.28719076065
+-0.146469,51.497266,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Night",1,379.75401354188
+0.042903,51.437374,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,14539.9701456608
+-0.305197,51.408932,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"piątek","01","Morning",1,15137.8615804829
+-0.0705,51.392443,"0","Snowing no high winds","Daylight","Snow",30,"Urban",1,1,"piątek","01","Morning",1,12865.6698173403
+-0.118505,51.364537,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,15068.7076112523
+-0.353438,51.470948,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"piątek","01","Morning",1,14997.8615578995
+-0.294846,51.571007,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,3,"piątek","01","Morning",1,13276.3225445238
+0.236992,51.572414,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"czwartek","01","Afternoon",1,27473.0336337682
+-0.105765,51.387803,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,1,"piątek","01","Morning",1,12641.9005109699
+-0.073314,51.51695,"0","Snowing no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Morning",1,5147.81800280801
+-0.159251,51.498277,"0","Other","Daylight","Wet or damp",30,"Urban",1,1,"piątek","01","Morning",1,1208.47952812839
+-0.097325,51.528763,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"piątek","01","Morning",1,4518.05378671709
+-0.258714,51.621553,"0","Other","Darkness - lights lit","Wet or damp",40,"Urban",1,1,"czwartek","01","Evening",1,15848.0842862758
+0.093946,51.527752,"0","Snowing no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Morning",1,16644.504774569
+-0.169916,51.519756,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,3009.38394665874
+-0.30411,51.407208,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,15210.0909625285
+-0.363007,51.469104,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,1,"środa","01","Afternoon",1,15689.8740953727
+-0.191607,51.536189,"0","Fine no high winds","Darkness - lights unlit","Dry",20,"Urban",1,1,"piątek","01","Afternoon",1,5376.31385645251
+-0.098261,51.55126,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"piątek","01","Afternoon",1,6543.27453671339
+-0.069319,51.614813,"0","Fine no high winds","Darkness - lights lit","Wet or damp",50,"Urban",2,3,"wtorek","01","Afternoon",1,13823.4598448857
+-0.280041,51.584729,"0","Fine + high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,13503.600072923
+-0.069621,51.450882,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,7343.09627492656
+-0.238362,51.576288,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,10883.2065427519
+-0.107839,51.487297,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"piątek","01","Afternoon",1,2700.44412789148
+0.016462,51.542599,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,11987.4643336912
+0.123442,51.448983,"0","Fine no high winds","Daylight","Dry",50,"Urban",1,2,"piątek","01","Afternoon",1,19223.5804266879
+-0.221527,51.519561,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,5970.14731231641
+-0.167536,51.51801,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Evening",1,2754.51864356295
+-0.241309,51.533618,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,7887.15611632542
+-0.140107,51.51551,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,1829.05341058364
+-0.186237,51.529812,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,4596.25206992538
+-0.405782,51.472841,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",2,2,"piątek","01","Afternoon",1,18526.8940330443
+0.181725,51.530288,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",4,2,"piątek","01","Afternoon",1,22683.8616948447
+-0.163931,51.424789,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,8414.37001195461
+-0.192439,51.475142,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Afternoon",1,4405.91124966706
+-0.068773,51.382253,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",3,2,"piątek","01","Afternoon",1,13962.7714192569
+-0.266061,51.622111,"0","Other","Daylight","Dry",50,"Urban",1,2,"piątek","01","Afternoon",1,16166.0129060769
+0.054593,51.492656,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"piątek","01","Afternoon",1,13634.3332500437
+-0.204537,51.49709,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,4349.09332614835
+-0.146197,51.464888,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"piątek","01","Afternoon",1,3822.03945271877
+-0.177393,51.375629,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Afternoon",1,13965.8223668689
+-0.274661,51.559112,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"piątek","01","Evening",1,11365.9009169421
+-0.098733,51.494973,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,3024.50509841048
+-0.048427,51.411232,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Evening",1,11735.3875727198
+-0.207491,51.469528,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"piątek","01","Afternoon",1,5616.48243874059
+0.110604,51.566841,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Evening",1,19039.1843370399
+-0.128811,51.632773,"0","Fine + high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Evening",1,14906.0458990362
+-0.073635,51.417045,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"piątek","01","Evening",1,10289.0622847153
+-0.02403,51.386723,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"sobota","01","Night",1,14946.0253381503
+-0.101782,51.383332,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,13185.651698764
+0.14128,51.580944,"0","Fine no high winds","Darkness - lights lit","Dry",50,"Urban",1,2,"piątek","01","Evening",1,21617.0367094572
+0.039926,51.509369,"0","Other","Darkness - lights lit","Dry",30,"Urban",1,2,"piątek","01","Evening",1,12648.1667233286
+0.072112,51.370585,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,3,"piątek","01","Evening",1,20620.8854568372
+-0.11054,51.428887,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,8114.06784886099
+-0.085875,51.574888,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,2,"sobota","01","Night",1,9283.19471900337
+-0.074796,51.526237,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"sobota","01","Night",1,5541.16073148844
+0.072345,51.52193,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,3,"piątek","01","Morning",1,15056.610467064
+-0.094264,51.474307,"0","Unknown","Darkness - lights unlit","Data missing or out of range",20,"Urban",1,2,"niedziela","01","Evening",1,4302.83124286237
+-0.215462,51.556698,"0","Fine no high winds","Daylight","Dry",30,"Urban",3,1,"wtorek","01","Afternoon",1,8189.50335342745
+-0.350393,51.527378,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",3,3,"piątek","01","Morning",1,14785.0007151463
+-0.064532,51.441895,"0","Fine no high winds","Darkness - lights lit","Data missing or out of range",30,"Urban",2,1,"środa","01","Evening",1,8326.48381504808
+-0.308245,51.337934,"0","Fine no high winds","Daylight","Wet or damp",60,"Rural",2,2,"sobota","01","Morning",1,21338.9613131916
+0.177616,51.480453,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"sobota","01","Morning",1,22241.5665985314
+-0.105421,51.403085,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,4,"sobota","01","Morning",1,10984.9878078935
+-0.165545,51.406019,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"sobota","01","Morning",1,10492.8714678285
+0.113196,51.386037,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,21717.5951208293
+-0.221858,51.503649,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"sobota","01","Morning",1,5566.12718598487
+-0.156701,51.515053,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"sobota","01","Afternoon",1,2050.4177423042
+-0.245948,51.506709,"0","Unknown","Daylight","Dry",30,"Urban",1,2,"piątek","01","Afternoon",1,7261.66389889999
+-0.201907,51.498039,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"sobota","01","Morning",1,4162.66432804162
+-0.274319,51.606226,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"sobota","01","Morning",1,15040.7625705144
+-0.088716,51.534648,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,1,"sobota","01","Afternoon",1,5403.75749365805
+0.041076,51.599546,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,3,"wtorek","01","Morning",1,16892.538902613
+-0.013642,51.457321,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"sobota","01","Morning",1,10033.7162451659
+-0.2336,51.598608,"0","Fine no high winds","Daylight","Wet or damp",50,"Urban",1,1,"sobota","01","Morning",1,12766.7770879912
+0.025239,51.473922,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,4,"piątek","01","Evening",1,11918.0641288144
+-0.16594,51.607911,"0","Other","Daylight","Dry",30,"Urban",2,3,"sobota","01","Afternoon",1,12225.1326849643
+-0.226666,51.502283,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"sobota","01","Afternoon",1,5887.03444128723
+-0.072212,51.584017,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"sobota","01","Afternoon",1,10610.365404633
+0.143656,51.484137,"0","Other","Daylight","Dry",30,"Urban",1,1,"sobota","01","Afternoon",1,19859.7658259222
+-0.017236,51.570241,"0","Other","Daylight","Wet or damp",30,"Urban",1,2,"sobota","01","Afternoon",1,11711.734282365
+-0.151614,51.466233,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"sobota","01","Afternoon",1,3722.36760850012
+-0.20861,51.521792,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"sobota","01","Afternoon",1,5268.37823436378
+-0.165573,51.520228,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"sobota","01","Evening",1,2867.32023587746
+-0.179148,51.487077,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"sobota","01","Afternoon",1,2910.89408502024
+-0.286281,51.553167,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,11672.3601785106
+-0.483978,51.494291,"0","Fine no high winds","Darkness - lights lit","Wet or damp",70,"Rural",1,2,"piątek","01","Evening",1,23715.543849239
+-0.259436,51.621564,"0","Fine no high winds","Daylight","Wet or damp",50,"Urban",1,2,"sobota","01","Afternoon",1,15874.6895804951
+-0.113763,51.465899,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,3,"sobota","01","Evening",1,4179.48278766912
+0.259934,51.543197,"0","Fine no high winds","Daylight","Wet or damp",40,"Rural",3,2,"sobota","01","Afternoon",1,28260.1835231787
+-0.173583,51.482134,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"sobota","01","Afternoon",1,2899.46086578011
+-0.192046,51.474147,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Afternoon",1,4452.58613081215
+-0.099381,51.579784,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,9449.43052208968
+-0.044074,51.529955,"0","Other","Darkness - lights lit","Dry",20,"Urban",2,2,"sobota","01","Evening",1,7594.73119916161
+-0.220132,51.485098,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,5644.68120642802
+0.009113,51.542725,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,2,"sobota","01","Night",1,11529.4914666835
+-0.162149,51.419006,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"sobota","01","Evening",1,9028.08162907209
+-0.192972,51.476229,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,4363.59314873784
+-0.025917,51.533068,"0","Fine no high winds","Darkness - lights lit","Frost or ice",20,"Urban",1,2,"sobota","01","Night",1,8876.92105284097
+-0.085612,51.450515,"0","Other","Darkness - lighting unknown","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,6669.57444355646
+-0.077405,51.378618,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,1,"sobota","01","Evening",1,14139.8646666516
+-0.115963,51.524298,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"sobota","01","Evening",1,3328.43450360348
+0.186878,51.565625,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"sobota","01","Evening",1,23938.7015620789
+-0.110964,51.460459,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,4807.02581393175
+-0.161906,51.464506,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,4095.60756586245
+-0.035143,51.566586,"1","Unknown","Darkness - lights lit","Frost or ice",30,"Urban",2,1,"niedziela","01","Night",1,10536.9557956118
+0.129696,51.56164,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"sobota","01","Afternoon",1,20052.7225988178
+-0.263011,51.508941,"0","Unknown","Daylight","Dry",30,"Urban",1,1,"sobota","01","Morning",1,8465.40411514146
+0.009788,51.456562,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Morning",1,11532.1793925941
+-0.064696,51.52643,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"niedziela","01","Morning",1,6150.32513360608
+-0.205987,51.482185,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",3,1,"niedziela","01","Morning",1,4827.56500367646
+-0.136634,51.522919,"0","Other","Darkness - lights lit","Frost or ice",30,"Urban",1,2,"sobota","01","Evening",1,2674.42673953942
+-0.055614,51.479068,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Morning",1,6381.39689089682
+-0.176987,51.501521,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Morning",1,2448.56758724189
+-0.016951,51.450722,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",3,2,"czwartek","01","Afternoon",1,10199.762955034
+-0.111911,51.461913,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,4632.87464508584
+-0.073771,51.417227,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Morning",1,10266.7293201335
+-0.167818,51.493015,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,1922.60734484587
+-0.329902,51.531854,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,13526.3774037956
+-0.126291,51.504499,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,1234.40359650003
+-0.378682,51.571115,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"niedziela","01","Afternoon",1,18252.2111047611
+-0.007688,51.511357,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,1,"piątek","01","Evening",1,9396.44670065448
+-0.004476,51.541968,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"niedziela","01","Afternoon",1,10645.1340949148
+-0.160199,51.492626,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,1461.66069712623
+-0.079967,51.461574,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"niedziela","01","Evening",1,5989.98361551358
+-0.074417,51.559143,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"niedziela","01","Afternoon",1,8152.91724259049
+-0.449718,51.480804,"0","Unknown","Darkness - lights lit","Dry",30,"Urban",1,2,"niedziela","01","Night",1,21435.4477474868
+0.251901,51.555771,"0","Fine no high winds","Daylight","Wet or damp",60,"Rural",1,2,"sobota","01","Afternoon",1,27990.4935846289
+0.230547,51.599965,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"sobota","01","Evening",1,28117.7065646187
+-0.078076,51.5271,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",4,2,"niedziela","01","Evening",1,5406.79044959554
+0.165179,51.543185,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,21826.0959600657
+-0.129677,51.42173,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,3,"sobota","01","Evening",1,8655.92267590505
+0.079581,51.392754,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,19396.8884178401
+-0.214311,51.575025,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,9826.9344349966
+-0.130381,51.615713,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,13003.8529181825
+-0.17339,51.461718,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Night",1,4701.93290721828
+0.062502,51.533794,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,14673.9762233053
+-0.17148,51.649722,"0","Unknown","Daylight","Dry",20,"Urban",1,1,"piątek","01","Morning",1,16890.1422888213
+-0.031284,51.442061,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"niedziela","01","Morning",1,9956.75089463575
+-0.076255,51.40261,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"niedziela","01","Morning",1,11667.3860956117
+-0.160671,51.520241,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",3,2,"niedziela","01","Morning",1,2688.48348670872
+0.086868,51.565288,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"niedziela","01","Afternoon",1,17468.5961355743
+-0.060662,51.624742,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,15071.4777235039
+0.056858,51.533354,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Night",1,14284.0586395967
+-0.070979,51.473297,"0","Raining no high winds","Darkness - lights unlit","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,5692.57212750147
+-0.016566,51.452964,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,2,"poniedziałek","01","Afternoon",1,10092.9588487506
+-0.427131,51.496869,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,19770.8242476031
+-0.068268,51.605534,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,12895.3098848054
+0.045049,51.591563,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",1,3,"poniedziałek","01","Morning",1,16533.2396830655
+-0.063571,51.617506,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,14249.6116084252
+-0.083429,51.588427,"0","Fine no high winds","Daylight","Wet or damp",20,"Urban",1,2,"niedziela","01","Morning",1,10733.6709847551
+-0.087777,51.52609,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,4801.82978827381
+-0.047766,51.473991,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Morning",1,7097.12547369109
+-0.298703,51.537251,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Night",1,11664.1900739317
+-0.089052,51.554167,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,7136.82871647899
+-0.076468,51.541282,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,6523.22594002912
+-0.048675,51.513395,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Morning",1,6649.75502501001
+-0.020666,51.481271,"0","Raining no high winds","Darkness - lighting unknown","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Morning",1,8632.31187718072
+-0.177737,51.453782,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",2,2,"poniedziałek","01","Morning",1,5626.1426114284
+-0.128477,51.507412,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,1309.00445718672
+-0.02413,51.444458,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,10181.7984455281
+-0.420252,51.50415,"0","Snowing no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,19299.118169227
+-0.098285,51.363671,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,3,"czwartek","01","Evening",1,15378.0099963472
+0.102244,51.37913,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",2,2,"poniedziałek","01","Morning",1,21571.4242577998
+-0.089715,51.36596,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,15258.2825002715
+-0.215739,51.556972,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,1,"niedziela","01","Afternoon",1,8225.30833126632
+-0.063685,51.587653,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,1,"poniedziałek","01","Morning",1,11244.3170661304
+-0.157559,51.497351,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,3,"poniedziałek","01","Morning",1,1105.22272323772
+-0.413508,51.573839,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,2,"niedziela","01","Evening",1,20566.4633472094
+-0.058806,51.41743,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Evening",1,10764.6005207809
+-0.213528,51.455052,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Evening",1,6981.95808159165
+-0.159982,51.512317,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,1932.72808871037
+-0.133978,51.489154,"0","Raining no high winds","Darkness - lights lit","Data missing or out of range",30,"Urban",1,1,"czwartek","01","Afternoon",1,1236.33811264157
+-0.122676,51.490772,"0","Raining no high winds","Daylight","Wet or damp",30,"Rural",3,2,"poniedziałek","01","Afternoon",1,1622.13676807966
+-0.211295,51.471654,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,5701.72394848729
+-0.069884,51.47193,"0","Raining no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"poniedziałek","01","Night",1,5835.72820557174
+-0.170197,51.51994,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,3037.59348354404
+-0.010306,51.461221,"0","Other","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,10049.0180540113
+-0.161622,51.485904,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,2009.5281550361
+-0.121443,51.604779,"0","Other","Darkness - lights lit","Dry",20,"Urban",2,2,"poniedziałek","01","Evening",1,11847.0090584772
+0.022708,51.459038,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,12251.0363352936
+0.135437,51.539414,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",2,3,"poniedziałek","01","Afternoon",1,19725.202924728
+-0.0055,51.47238,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,3,"poniedziałek","01","Afternoon",1,9910.22288514033
+-0.018852,51.446707,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Evening",1,10333.9770744937
+0.014395,51.410799,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"poniedziałek","01","Evening",1,14633.6561472276
+0.147862,51.542964,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,20653.2915322388
+-0.119894,51.516357,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Night",1,2449.68400595572
+-0.198156,51.541955,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Night",1,6159.94308066187
+-0.109919,51.59713,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"poniedziałek","01","Evening",1,11132.7444008698
+-0.059875,51.66007,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",2,2,"poniedziałek","01","Evening",1,18793.622351395
+-0.125095,51.523095,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"poniedziałek","01","Evening",1,2911.23438252751
+-0.119894,51.516357,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"poniedziałek","01","Evening",1,2449.68400595572
+-0.209675,51.586465,"0","Raining no high winds","Daylight","Wet or damp",40,"Urban",1,2,"poniedziałek","01","Morning",1,10797.6818168775
+-0.134702,51.52082,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Night",1,2466.53856347364
+-0.086651,51.470406,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,1,"czwartek","01","Afternoon",1,4986.35959003489
+-0.02815,51.581486,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,12085.7698878454
+0.005334,51.597824,"0","Fine no high winds","Daylight","Wet or damp",50,"Rural",5,5,"wtorek","01","Morning",1,14985.6518443939
+-0.066486,51.341028,"0","Fine no high winds","Daylight","Dry",40,"Rural",1,3,"wtorek","01","Morning",1,18359.7419809802
+-0.374687,51.492916,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",20,"Urban",2,2,"poniedziałek","01","Afternoon",1,16150.2756381683
+-0.138006,51.492815,"0","Unknown","Daylight","Data missing or out of range",20,"Urban",1,2,"środa","01","Afternoon",1,750.65426846933
+-0.098297,51.474283,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",20,"Urban",1,2,"wtorek","01","Afternoon",1,4094.19164548134
+-0.20156,51.378611,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"wtorek","01","Morning",1,14039.5290237252
+-0.262069,51.582846,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,1,"piątek","01","Evening",1,12495.5998031014
+-0.209101,51.387899,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,13230.3596029286
+-0.197526,51.510472,"0","Unknown","Darkness - lighting unknown","Dry",30,"Urban",1,2,"sobota","01","Evening",1,4058.70473296398
+-0.095725,51.504906,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,2,"piątek","01","Afternoon",1,3261.57651750554
+-0.179556,51.37908,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"niedziela","01","Afternoon",1,13615.8765637072
+-0.180248,51.517309,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Morning",1,3342.76763481229
+-0.401512,51.467297,"1","Fine no high winds","Daylight","Wet or damp",30,"Urban",2,1,"wtorek","01","Morning",1,18344.8569263916
+0.06377,51.450228,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Morning",1,15261.3057133043
+-0.103172,51.537221,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Afternoon",1,5017.67948294338
+-0.276209,51.613538,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"wtorek","01","Morning",1,15770.2154574134
+0.270773,51.566819,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"piątek","01","Afternoon",1,29551.4600884493
+-0.137865,51.619878,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,13446.0364575474
+-0.121018,51.604592,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,5,"wtorek","01","Morning",1,11829.8939709684
+-0.303512,51.563039,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,13264.4575487451
+-0.462894,51.495815,"0","Fine no high winds","Darkness - lights lit","Dry",70,"Urban",1,2,"poniedziałek","01","Afternoon",1,22250.9421567658
+0.063665,51.578648,"0","Fine no high winds","Daylight","Dry",40,"Urban",2,2,"wtorek","01","Morning",1,16759.9294173
+-0.134337,51.490959,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,1,"czwartek","01","Evening",1,1047.22014406542
+0.220834,51.560671,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,2,"wtorek","01","Afternoon",1,26035.6838744922
+0.095532,51.571698,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,18316.7121431438
+-0.142133,51.51887,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,1,"czwartek","01","Morning",1,2199.10620321171
+-0.110122,51.463413,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"wtorek","01","Morning",1,4542.9829071401
+-0.164432,51.405103,"0","Unknown","Daylight","Wet or damp",50,"Urban",1,2,"czwartek","01","Morning",1,10581.8996089719
+-0.135807,51.511395,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"wtorek","01","Afternoon",1,1429.90853353425
+-0.045338,51.456684,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,8191.3932454829
+-0.285828,51.56521,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,12390.3680507313
+-0.228831,51.505913,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,6073.57283893065
+-0.086118,51.434965,"0","Fine no high winds","Daylight","Data missing or out of range",20,"Urban",1,2,"czwartek","01","Morning",1,8120.50795624779
+0.107509,51.506105,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,17297.6137929682
+-0.102236,51.330642,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,18955.1550687194
+0.107941,51.403038,"0","Unknown","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,20364.309592314
+-0.173004,51.604604,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,11939.0707737275
+-0.198333,51.369299,"0","Fine no high winds","Darkness - no lighting","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,14973.0515068455
+-0.190458,51.383206,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,13336.2913996404
+0.280507,51.57967,"0","Fine no high winds","Darkness - lights lit","Dry",70,"Rural",2,5,"wtorek","01","Afternoon",1,30588.1130581671
+-0.096705,51.374077,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,14267.6752201873
+-0.430351,51.608507,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"wtorek","01","Afternoon",1,23388.1302572578
+-0.477642,51.494209,"0","Fine no high winds","Darkness - lights lit","Dry",70,"Rural",1,2,"wtorek","01","Afternoon",1,23276.7891503361
+-0.183818,51.550727,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,1,"poniedziałek","01","Morning",1,6438.31177501211
+-0.150764,51.505067,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,905.080171301283
+-0.228014,51.582607,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,11043.49306882
+-0.401089,51.51648,"0","Fine no high winds","Darkness - lights lit","Wet or damp",40,"Urban",1,2,"wtorek","01","Afternoon",1,18064.3580492956
+-0.067984,51.598605,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Evening",1,12198.916702401
+-0.124315,51.485943,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Morning",1,1905.21250896176
+-0.42116,51.502904,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,19358.75839419
+-0.069089,51.572545,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"wtorek","01","Evening",1,9602.60084518982
+-0.066484,51.497863,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,5225.77054043053
+0.088556,51.390976,"0","Fine no high winds","Darkness - lights unlit","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,20012.4181663807
+-0.227145,51.582684,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,11018.3470982768
+0.136776,51.552609,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"wtorek","01","Afternoon",1,20196.1259484074
+-0.060332,51.493445,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"wtorek","01","Evening",1,5685.67168288738
+-0.246911,51.612925,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Afternoon",1,14607.1521366475
+-0.246152,51.381175,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,14991.2871148831
+-0.119884,51.443066,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,6422.90424402424
+0.138745,51.530001,"0","Other","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"wtorek","01","Evening",1,19741.1701302927
+-0.171807,51.548112,"0","Fine no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"środa","01","Night",1,5835.19963820009
+0.080013,51.551021,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,16417.5949144374
+-0.146913,51.536031,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,4124.23385971075
+-0.147934,51.450437,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,2,"czwartek","01","Afternoon",1,5435.214422652
+-0.190801,51.429164,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"środa","01","Morning",1,8494.44355113869
+-0.15397,51.518427,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,2307.53065362602
+-0.05301,51.530013,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,7051.23648797866
+0.039924,51.441563,"0","Fine no high winds","Daylight","Frost or ice",40,"Urban",1,2,"środa","01","Morning",1,14140.4512833019
+-0.257829,51.482336,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Morning",1,8251.9184560395
+-0.151551,51.432149,"0","Other","Daylight","Frost or ice",30,"Urban",1,2,"środa","01","Morning",1,7484.91408587936
+-0.390694,51.52515,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,17480.6845104089
+-0.159011,51.461313,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,4372.85893103848
+-0.395474,51.573684,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,19423.6489587512
+-0.009578,51.517594,"0","Fine no high winds","Daylight","Frost or ice",40,"Urban",1,1,"środa","01","Morning",1,9393.51200181589
+-0.15224,51.504191,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,914.37969748818
+-0.036273,51.486749,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"środa","01","Morning",1,7446.78885901023
+-0.248806,51.529863,"0","Snowing no high winds","Darkness - lights lit","Snow",30,"Urban",2,1,"czwartek","01","Afternoon",1,8160.91663488431
+-0.094528,51.440318,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,7322.32438134511
+-0.118649,51.36454,"0","Fine no high winds","Darkness - lighting unknown","Dry",30,"Urban",1,2,"piątek","01","Morning",1,15067.3036289939
+-0.008824,51.501844,"0","Other","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,9224.36231675781
+0.046012,51.371673,"0","Fine no high winds","Daylight","Dry",40,"Urban",1,1,"środa","01","Morning",1,19267.9634801578
+-0.173766,51.477551,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Urban",3,4,"środa","01","Morning",1,3263.81079899965
+-0.026031,51.640351,"0","Fine no high winds","Daylight","Frost or ice",30,"Rural",1,2,"środa","01","Morning",1,17647.2301287814
+-0.026057,51.53316,"0","Fine no high winds","Daylight","Frost or ice",20,"Urban",1,2,"środa","01","Morning",1,8872.50902060217
+-0.276967,51.375697,"0","Fine no high winds","Daylight","Wet or damp",40,"Urban",1,2,"środa","01","Morning",1,16632.8426166633
+-0.093857,51.504786,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"środa","01","Morning",1,3386.05190235161
+-0.072452,51.486181,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"środa","01","Morning",1,5021.79809817353
+-0.417704,51.506994,"0","Unknown","Daylight","Dry",30,"Urban",1,1,"wtorek","01","Afternoon",1,19133.9278152189
+-0.120254,51.377964,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,13569.67223411
+-0.007187,51.50964,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"piątek","01","Afternoon",1,9405.25390448518
+-0.373928,51.481845,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,2,"środa","01","Morning",1,16199.3658859725
+-0.337435,51.515055,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Morning",1,13666.1930975721
+-0.125783,51.576522,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,8688.46758680356
+-0.232589,51.494459,"0","Raining no high winds","Daylight","Wet or damp",20,"Urban",1,2,"piątek","01","Afternoon",1,6308.786900972
+-0.223276,51.496836,"0","Unknown","Darkness - lights lit","Data missing or out of range",30,"Urban",1,2,"niedziela","01","Evening",1,5647.5928974573
+-0.133818,51.390681,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,12083.8106873551
+0.250716,51.528832,"0","Fine no high winds","Daylight","Frost or ice",60,"Rural",1,2,"środa","01","Morning",1,27397.1298737075
+0.036569,51.54396,"0","Raining no high winds","Daylight","Wet or damp",30,"Urban",1,2,"poniedziałek","01","Morning",1,13329.3506867842
+-0.116463,51.470259,"0","Raining no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"niedziela","01","Afternoon",1,3663.29531391042
+-0.312806,51.526304,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Afternoon",1,12223.2115985168
+-0.101468,51.366601,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",1,2,"poniedziałek","01","Afternoon",1,15015.5238869475
+0.191171,51.552865,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,3,"środa","01","Afternoon",1,23828.9495504758
+-0.118076,51.549961,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,5894.99537017502
+0.020513,51.607995,"0","Fine no high winds","Daylight","Dry",30,"Rural",2,2,"środa","01","Afternoon",1,16529.4742233082
+-0.166329,51.555221,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,6471.34027428703
+-0.206312,51.506919,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,4549.46741760529
+-0.259034,51.541436,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,9384.20305796915
+-0.350675,51.527562,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,14808.4281388472
+-0.15864,51.520569,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,2655.95704316749
+-0.130864,51.49486,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,897.589319156875
+-0.143619,51.514217,"0","Fine no high winds","Darkness - lights unlit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,1685.44657994032
+-0.112556,51.585752,"0","Fine no high winds","Daylight","Dry",20,"Urban",2,1,"środa","01","Afternoon",1,9855.45092983351
+-0.103764,51.623558,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,3,"środa","01","Afternoon",1,14101.54915861
+-0.121988,51.581048,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,9223.89397297231
+-0.117453,51.519645,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Evening",1,2843.10053601628
+-0.239724,51.533594,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"środa","01","Afternoon",1,7790.12466037119
+0.037577,51.388816,"0","Fine no high winds","Daylight","Dry",30,"Rural",1,1,"środa","01","Afternoon",1,17486.2832721272
+-0.35382,51.436333,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,16275.4525745144
+-0.036022,51.44232,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,9687.13384890172
+0.0448,51.531316,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"poniedziałek","01","Evening",1,13418.7906074792
+-0.165415,51.430838,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,1,"środa","01","Afternoon",1,7774.14591275431
+-0.489928,51.462445,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Rural",1,2,"wtorek","01","Afternoon",1,24473.0966851404
+-0.136909,51.342888,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,17394.601169837
+-0.053945,51.558805,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"środa","01","Evening",1,9012.41883752369
+-0.112848,51.55779,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,6833.72860977248
+0.005531,51.441527,"0","Fine no high winds","Darkness - lights unlit","Dry",20,"Urban",1,1,"niedziela","01","Afternoon",1,12064.9969152671
+-0.122576,51.472156,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,1,"środa","01","Evening",1,3285.53289135996
+-0.083467,51.439868,"0","Fine no high winds","Daylight","Frost or ice",30,"Urban",1,1,"środa","01","Morning",1,7739.42241123049
+-0.071982,51.551909,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,2,"środa","01","Evening",1,7613.40427577739
+-0.03676,51.565893,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Evening",1,10403.5029133987
+-0.299867,51.397524,"0","Fine no high winds","Darkness - lights lit","Wet or damp",30,"Urban",1,2,"sobota","01","Evening",1,15749.7436141848
+-0.020626,51.571917,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"piątek","01","Morning",1,11668.5401405562
+-0.253138,51.540988,"0","Fine no high winds","Darkness - lights lit","Dry",40,"Urban",1,2,"poniedziałek","01","Afternoon",1,9007.44790426393
+-0.061437,51.548858,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Afternoon",1,7854.45349885268
+-0.20721,51.550098,"0","Snowing no high winds","Darkness - lights unlit","Snow",30,"Urban",1,1,"czwartek","01","Afternoon",1,7258.95907761384
+-0.069751,51.515992,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Afternoon",1,5338.01930762912
+-0.020491,51.551771,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"środa","01","Afternoon",1,10248.0725587421
+0.153145,51.456265,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,21002.4526746246
+-0.066931,51.565585,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,9037.49772563244
+0.013891,51.556222,"0","Snowing no high winds","Darkness - lights lit","Wet or damp",30,"Urban",3,2,"czwartek","01","Evening",1,12520.8369802865
+-0.078562,51.546352,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"czwartek","01","Morning",1,6846.47636194308
+-0.412053,51.57418,"0","Unknown","Daylight","Data missing or out of range",30,"Urban",1,1,"piątek","01","Morning",1,20489.7515314465
+-0.365701,51.554839,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,16697.2099641106
+0.101013,51.468272,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,17183.4857305411
+0.044232,51.534744,"0","Unknown","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Morning",1,13487.6493315329
+-0.261378,51.551812,"0","Unknown","Darkness - lighting unknown","Data missing or out of range",30,"Urban",1,2,"środa","01","Morning",1,10145.2768450739
+0.000853,51.581265,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"czwartek","01","Morning",1,13463.5845426551
+0.012577,51.637537,"0","Fine no high winds","Daylight","Wet or damp",30,"Rural",1,2,"czwartek","01","Morning",1,18751.9738506279
+0.081057,51.539132,"0","Other","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,16071.2345668582
+0.053675,51.52028,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,13750.9603218776
+-0.034949,51.671435,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,20558.603317274
+0.111652,51.570779,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,19282.3435800131
+-0.025462,51.640161,"0","Fine no high winds","Daylight","Dry",40,"Rural",1,2,"czwartek","01","Morning",1,17646.3313816764
+-0.270359,51.630627,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,1,"czwartek","01","Morning",1,17128.4838947303
+0.172122,51.525431,"0","Fine no high winds","Daylight","Frost or ice",20,"Urban",1,1,"środa","01","Morning",1,21949.1410692322
+-0.047894,51.64953,"0","Other","Darkness - lights lit","Data missing or out of range",30,"Urban",2,2,"środa","01","Evening",1,17961.9089350923
+0.074493,51.391496,"0","Unknown","Darkness - lights unlit","Data missing or out of range",30,"Urban",1,1,"czwartek","01","Afternoon",1,19205.696504015
+0.014995,51.473469,"0","Other","Daylight","Wet or damp",30,"Urban",2,4,"czwartek","01","Morning",1,11241.9031730566
+0.032705,51.460484,"0","Fine no high winds","Darkness - lights lit","Dry",50,"Urban",1,2,"środa","01","Evening",1,12844.0359461371
+0.149485,51.464156,"0","Fine no high winds","Daylight","Wet or damp",30,"Urban",1,2,"piątek","01","Afternoon",1,20569.5828709126
+-0.066344,51.47394,"0","Fine no high winds","Daylight","Dry",30,"Urban",2,1,"czwartek","01","Morning",1,5937.96167789262
+-0.028398,51.358649,"0","Fine no high winds","Daylight","Dry",40,"Rural",2,3,"środa","01","Morning",1,17507.8857545681
+-0.146599,51.497628,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,367.519323422288
+-0.029708,51.575487,"0","Unknown","Daylight","Wet or damp",30,"Urban",1,1,"wtorek","01","Morning",1,11514.6013193593
+-0.414423,51.510187,"0","Fine no high winds","Daylight","Dry",30,"Urban",4,2,"środa","01","Morning",1,18925.9761804933
+0.05599,51.533279,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"czwartek","01","Morning",1,14223.894873941
+-0.217619,51.501516,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,5256.37727953582
+-0.048623,51.622474,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,15172.7277394364
+-0.085548,51.589541,"0","Fine no high winds","Daylight","Dry",20,"Urban",1,2,"czwartek","01","Afternoon",1,10794.7703024141
+-0.016671,51.603144,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,14463.8617229382
+-0.30421,51.404511,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,15418.9506732285
+0.040322,51.59884,"0","Raining no high winds","Darkness - lights lit","Wet or damp",20,"Urban",2,2,"piątek","01","Afternoon",1,16801.4886952698
+-0.125647,51.485065,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,3,"czwartek","01","Afternoon",1,1926.13366789173
+-0.087641,51.525908,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,4796.56782855651
+-0.255569,51.560358,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,10415.5055144808
+-0.305187,51.506321,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,11345.6166233885
+-0.225246,51.512873,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"środa","01","Evening",1,5976.92286468361
+-0.304176,51.40541,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,15348.9597128912
+-0.266586,51.467898,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"czwartek","01","Evening",1,9318.31642914822
+0.104207,51.528287,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"czwartek","01","Afternoon",1,17353.6838154133
+-0.257056,51.404359,"0","Other","Daylight","Dry",30,"Urban",1,2,"środa","01","Morning",1,13233.3579405161
+-0.097798,51.358088,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"czwartek","01","Afternoon",1,15994.298959988
+-0.362074,51.42278,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Evening",1,17477.9448676771
+-0.220799,51.549315,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Afternoon",1,7817.69532927733
+-0.148102,51.535151,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"czwartek","01","Afternoon",1,4034.62191807179
+-0.125918,51.524097,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",2,2,"czwartek","01","Evening",1,2992.31533396645
+-0.147534,51.492337,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,1,"czwartek","01","Evening",1,850.772397053818
+-0.07452,51.519128,"0","Fine no high winds","Darkness - lights lit","Dry",20,"Urban",1,2,"czwartek","01","Evening",1,5170.46421925136
+-0.027813,51.572578,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"poniedziałek","01","Afternoon",1,11368.5508000979
+-0.079929,51.4899,"0","Other","Darkness - lights lit","Dry",30,"Urban",1,2,"czwartek","01","Evening",1,4413.43183639048
+-0.035175,51.582593,"0","Fine no high winds","Darkness - lights lit","Dry",30,"Urban",1,2,"wtorek","01","Afternoon",1,11870.8586443135
+0.168993,51.517215,"0","Fine no high winds","Darkness - lights lit","Frost or ice",30,"Rural",1,1,"piątek","01","Night",1,21631.9809459576
+-0.191682,51.472433,"0","Fine no high winds","Daylight","Dry",30,"Urban",1,1,"czwartek","01","Morning",1,4555.01345368033
