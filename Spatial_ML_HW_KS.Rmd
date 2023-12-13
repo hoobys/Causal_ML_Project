@@ -22,6 +22,7 @@ The methodology of the analysis involves several stages:
 The outcome of this analysis aims to shed light on the spatial dynamics of road accidents and their outcomes, potentially offering insights into road safety enhancement strategies.
 
 ```{r}
+# Load libraries
 library(tidyverse)
 library(readr)
 library(lubridate)
@@ -37,12 +38,15 @@ library(caret)
 library(viridis)
 library(ggridges)
 library(xgboost)
+library(DALEX)
 
+# Set working directory
 setwd(here())
 ```
 ## Read data
 
 ```{r}
+# Load data
 accident_data <- read_csv("accident_data.csv")
 
 summary(accident_data)
@@ -50,11 +54,7 @@ head(accident_data)
 ```
 
 ```{r}
-unique(accident_data$Year)
-```
-
-
-```{r}
+# Remove unnecessary columns
 accident_data <- accident_data %>%
   select(
     Longitude, Latitude,
@@ -62,10 +62,7 @@ accident_data <- accident_data %>%
     Date, Time,
     Weather_Conditions, Light_Conditions,
     Road_Surface_Conditions,
-    "1st_Road_Class", "2nd_Road_Class",
     Speed_limit,
-    "Pedestrian_Crossing-Human_Control",
-    "Pedestrian_Crossing-Physical_Facilities",
     Urban_or_Rural_Area,
     Number_of_Casualties, Number_of_Vehicles
   )
@@ -74,14 +71,17 @@ accident_data <- accident_data %>%
 ## Data adjustments
 
 ```{r}
+# Remove observations with missing values
 accident_data <- accident_data %>%
   filter(!is.na(Longitude), !is.na(Latitude))
 ```
 
 ```{r}
+# Encode the target variable
 accident_data$Accident_Severity <- accident_data$Accident_Severity %>%
   recode("Slight" = 0, "Severe" = 1, "Fatal" = 1)
 
+# Format the date and time variables
 accident_data$Date <- as.Date(accident_data$Date, format = "%Y-%m-%d")
 accident_data$Year <- format(accident_data$Date, "%Y")
 
@@ -107,8 +107,6 @@ dbscan_result <- dbscan(coordinates, eps = 0.1, minPts = 500)
 
 # Extract cluster labels
 cluster_labels <- dbscan_result$cluster
-
-# Add cluster labels to the accident_data dataframe
 accident_data$Cluster <- cluster_labels
 
 # Filter the accident_data dataframe to include only observations in a cluster
@@ -164,12 +162,13 @@ The clustering analysis depicted on the map has successfully identified 29 disti
 ## Exploratory Data Analysis
 
 ```{r}
+# Filter unnecessary columns
 accident_data <- accident_data[, !(names(accident_data) %in% c(
-  "Longitude", "Latitude", "Cluster", "Hour", "Number_of_Casualties",
-  "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
-  "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
+  "Longitude", "Latitude", "Cluster", "Hour",
+  "Number_of_Casualties", "Date", "Time", "Year"
 ))]
 
+# Remove observations with missing values
 accident_data <- accident_data[!is.na(accident_data$Accident_Severity), ]
 
 # Convert all columns to factors
@@ -180,49 +179,59 @@ summary(accident_data)
 ```
 EDA
 ```{r}
-ggplot(accident_data, aes(x=factor(Accident_Severity), fill=factor(Accident_Severity))) +
-  geom_bar(stat="count") +
-  scale_fill_manual(values=c("0"="blue", "1"="red"),
-                    labels=c("0"="Slight", "1"="Severe or Fatal"),
-                    name="Accident Severity") +  # This line sets manual colors and labels
-  labs(x="Accident Severity",
-       y="Count",
-       title="Distribution of Accident Severity") +
+ggplot(
+  accident_data,
+  aes(x = factor(Accident_Severity), fill = factor(Accident_Severity))
+) +
+  geom_bar(stat = "count") +
+  scale_fill_manual(
+    values = c("0" = "blue", "1" = "red"),
+    labels = c("0" = "Slight", "1" = "Severe or Fatal"),
+    name = "Accident Severity"
+  ) +
+  labs(
+    x = "Accident Severity",
+    y = "Count",
+    title = "Distribution of Accident Severity"
+  ) +
   theme_minimal()
 ```
 
 ```{r}
-ggplot(accident_data, aes(x=Speed_limit, fill=..count..)) +
-  geom_histogram(binwidth=10, color="black", show.legend=FALSE) +  
-  scale_fill_viridis(name="Frequency", option="D") +  
-  labs(x="Speed Limit",
-       y="Frequency",
-       title="Distribution of Speed Limits") +
+ggplot(accident_data, aes(x = Speed_limit, fill = ..count..)) +
+  geom_histogram(binwidth = 10, color = "black", show.legend = FALSE) +
+  scale_fill_viridis(name = "Frequency", option = "D") +
+  labs(
+    x = "Speed Limit",
+    y = "Frequency",
+    title = "Distribution of Speed Limits"
+  ) +
   theme_minimal()
 ```
 ```{r}
 ggplot(accident_data, aes(x = Weather_Conditions, fill = Weather_Conditions)) +
   geom_bar() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "Accidents in Different Weather Conditions", x = "Weather Conditions", y = "Count")
+  labs(
+    title = "Accidents in Different Weather Conditions",
+    x = "Weather Conditions",
+    y = "Count"
+  )
 ```
 
 ```{r}
-day_mapping <- setNames(c('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'),
-                        c('poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota', 'niedziela'))
-
-accident_data$Day_of_Week <- day_mapping[accident_data$Day_of_Week]
-```
-
-```{r}
-ggplot(accident_data, aes(x=Day_of_Week, fill=factor(Accident_Severity))) +
-  geom_bar(position="dodge") +
-  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
-                    labels=c("0"="Slight", "1"="Severe or Fatal"),
-                    name="Accident Severity") +
-  labs(x="Day of the Week",
-       y="Count",
-       title="Day of the Week vs Accident Severity") +
+ggplot(accident_data, aes(x = Day_of_Week, fill = factor(Accident_Severity))) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual(
+    values = c("0" = "lightblue", "1" = "red"),
+    labels = c("0" = "Slight", "1" = "Severe or Fatal"),
+    name = "Accident Severity"
+  ) +
+  labs(
+    x = "Day of the Week",
+    y = "Count",
+    title = "Day of the Week vs Accident Severity"
+  ) +
   theme_light() +
   theme(
     panel.background = element_rect(fill = "white", colour = "white"),
@@ -232,14 +241,18 @@ ggplot(accident_data, aes(x=Day_of_Week, fill=factor(Accident_Severity))) +
   )
 ```
 ```{r}
-ggplot(accident_data, aes(x=TimeOfDay, fill=factor(Accident_Severity))) +
-  geom_bar(position="dodge") +
-  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
-                    labels=c("0"="Slight", "1"="Severe or Fatal"),
-                    name="Accident Severity") +
-  labs(x="Time of Day",
-       y="Count",
-       title="Time of Day vs Accident Severity") +
+ggplot(accident_data, aes(x = TimeOfDay, fill = factor(Accident_Severity))) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual(
+    values = c("0" = "lightblue", "1" = "red"),
+    labels = c("0" = "Slight", "1" = "Severe or Fatal"),
+    name = "Accident Severity"
+  ) +
+  labs(
+    x = "Time of Day",
+    y = "Count",
+    title = "Time of Day vs Accident Severity"
+  ) +
   theme_light() +
   theme(
     panel.background = element_rect(fill = "white", colour = "white"),
@@ -250,30 +263,42 @@ ggplot(accident_data, aes(x=TimeOfDay, fill=factor(Accident_Severity))) +
 ```
 
 ```{r}
-ggplot(accident_data, aes(x=DistanceToHotspot)) +
-  geom_density(fill="skyblue", alpha=0.5) +
+ggplot(accident_data, aes(x = DistanceToHotspot)) +
+  geom_density(fill = "skyblue", alpha = 0.5) +
   xlim(0, 2) +
-  labs(x="Distance to Hotspot",
-       y="Density",
-       title="Empirical Density Function of Distance to Hotspot") +
+  labs(
+    x = "Distance to Hotspot",
+    y = "Density",
+    title = "Empirical Density Function of Distance to Hotspot"
+  ) +
   theme_minimal()
 ```
 ```{r}
-ggplot(accident_data, aes(x=factor(Accident_Severity), y=DistanceToHotspot)) +
-  geom_violin(trim=FALSE, fill="skyblue", color="black") +
-  scale_x_discrete(name="Accident Severity", 
-                   labels=c("0"="Slight", "1"="Severe or Fatal")) + 
+ggplot(
+  accident_data,
+  aes(x = factor(Accident_Severity), y = DistanceToHotspot)
+) +
+  geom_violin(trim = FALSE, fill = "skyblue", color = "black") +
+  scale_x_discrete(
+    name = "Accident Severity",
+    labels = c("0" = "Slight", "1" = "Severe or Fatal")
+  ) +
   theme_minimal()
 ```
 
 ```{r}
-ggplot(accident_data, aes(x=DistanceToHotspot, fill=factor(Accident_Severity))) +
-  geom_density(alpha=0.5) +
+ggplot(
+  accident_data,
+  aes(x = DistanceToHotspot, fill = factor(Accident_Severity))
+) +
+  geom_density(alpha = 0.5) +
   facet_grid(Accident_Severity ~ .) +
-  scale_x_continuous(limits=c(0, 2)) +  
-  scale_fill_manual(values=c("0"="lightblue", "1"="red"),
-                    labels=c("0"="Slight", "1"="Severe or Fatal"),
-                    name="Accident Severity") +  
+  scale_x_continuous(limits = c(0, 2)) +
+  scale_fill_manual(
+    values = c("0" = "lightblue", "1" = "red"),
+    labels = c("0" = "Slight", "1" = "Severe or Fatal"),
+    name = "Accident Severity"
+  ) +
   theme_minimal()
 ```
 ## Exploratory Data Analysis Summary
@@ -296,3 +321,244 @@ The exploratory data analysis stage provided several key insights from the visua
 - The distribution of accidents peaks at a speed limit of 30 units, hinting that most accidents occur in areas with this speed limit, potentially in urban settings where such limits are common.
 
 
+## Splitting the Data into Training and Testing Sets
+In this phase of our analysis, we take the crucial step of dividing
+our dataset into training and testing subsets. This is fundamental
+for any machine learning application, as it allows us to train our models
+on one set of data (training set) and then test their performance on a separate,
+unseen set of data (testing set). We use the createDataPartition function from
+the caret package to achieve a balanced split, ensuring that our training and
+testing sets have a similar distribution of accident severities. By setting
+set.seed(123), we guarantee that our results are reproducible, an important
+aspect of scientific analysis.
+
+```{r}
+# Split the data into training and testing sets
+set.seed(123)
+train_indices <- createDataPartition(
+  accident_data$Accident_Severity,
+  p = 0.7, list = FALSE
+)
+train_data <- accident_data[train_indices, ]
+test_data <- accident_data[-train_indices, ]
+
+# Convert the data to numeric
+train_data_numeric <- train_data %>%
+  mutate_if(is.factor, as.numeric)
+test_data_numeric <- test_data %>%
+  mutate_if(is.factor, as.numeric)
+```
+
+## Preparing the XGBoost Model
+We opt for the XGBoost algorithm, renowned for its efficiency and
+effectiveness in classification problems. XGBoost stands for eXtreme
+Gradient Boosting and is particularly useful in dealing with unbalanced
+datasets and non-linear relationships. We define various parameters for our
+XGBoost model, such as the learning rate (eta), maximum depth of trees (max_depth),
+and subsampling rates (subsample and colsample_bytree). These parameters are
+fine-tuned to optimize the model's performance.
+
+```{r}
+# Create the xgboost model
+params <- list(
+  objective = "binary:logistic",
+  eval_metric = "logloss",
+  eta = 0.1,
+  max_depth = 4,
+  subsample = 0.8,
+  colsample_bytree = 0.8
+)
+
+model <- xgboost(
+  data = as.matrix(train_data_numeric %>% select(-Accident_Severity)),
+  label = train_data$Accident_Severity,
+  params = params,
+  nrounds = 100
+)
+```
+
+## Making Predictions
+Finally, we use our trained model to make predictions on the test dataset.
+These predictions will help us evaluate the performance of our model in
+predicting the severity of road accidents. By comparing these predictions
+with the actual outcomes in the test dataset, we can assess the accuracy
+and reliability of our model.
+
+```{r}
+# Make predictions on the test data
+predictions <- predict(
+  model,
+  as.matrix(test_data_numeric %>% select(-Accident_Severity))
+)
+```
+
+## Model Evaluation Metrics
+### Accuracy
+We assessed the accuracy of our XGBoost model, which reflects the proportion
+of correct predictions. The model achieved an accuracy of approximately 98.42%,
+indicating a high level of effectiveness in predicting the severity of road accidents.
+This metric is straightforward but should be interpreted with caution in cases of class imbalance.
+
+```{r}
+# Accuracy
+mean(ifelse(predictions > 0.5, 1, 0) == test_data$Accident_Severity)
+```
+
+### Area Under the Curve (AUC)
+In addition to accuracy, we evaluated the model's performance using the Area Under
+the Receiver Operating Characteristic (ROC) Curve (AUC). The AUC score, standing at
+0.774, provides an aggregate measure of the model's ability to discriminate between
+different outcome classes. A higher AUC value generally indicates a better model performance.
+This metric offers a more nuanced view of the model's effectiveness, especially in unbalanced datasets.
+
+```{r}
+# AUC score
+roc_obj <- roc(test_data$Accident_Severity, predictions)
+auc_value <- auc(roc_obj)
+print(auc_value)
+```
+
+## Receiver Operating Characteristic (ROC) Curve
+As seen in the graph, the ROC curve arches towards the upper left corner, indicating a good predictive performance.
+The closer the curve follows the left-hand border and then the top border of the ROC space, the more accurate the test.
+Conversely, a curve that approaches the 45-degree diagonal line represents a less effective model, with an AUC close to 0.5,
+which is no better than random guessing.
+
+The area under the ROC curve (AUC) provides a single measure of overall performance and can be used to compare different models.
+In our case, the previously calculated AUC of 0.774 suggests that the model has a good level of discrimination capability,
+distinguishing between the different classes of accident severity.
+
+```{r}
+# Plot the ROC curve
+plot(roc_obj, main = "ROC")
+```
+
+## Feature Importance Analysis
+The XGBoost model provides a mechanism to evaluate the importance of each feature in making predictions.
+Here we use the xgb.importance function from the XGBoost package to extract feature importance metrics.
+The table above lists the features along with their respective importance scores across three metrics: Gain, Cover, and Frequency.
+
+In our analysis, Speed_limit is identified as the most significant feature, with the highest Gain score,
+indicating that it has the highest impact on the outcome of the model. This is followed by DistanceToHotspot
+and Number_of_Vehicles, which also play substantial roles in predicting the severity of road accidents.
+
+The `DistanceToHotspot` is the custom spatial variable we created, measuring the distance from each accident
+to the nearest accident cluster center identified by DBSCAN clustering. Its high importance in our model
+underscores the critical role spatial factors play in road accident analysis, indicating that accidents
+occurring near these hotspots may have distinct characteristics or risk factors. This insight is valuable
+for targeted road safety measures and urban planning.
+
+```{r}
+# Feature importance
+xgb.importance(model = model)
+
+# Show importance plot with ggplot2
+xgb.importance(model = model) %>%
+  as.data.frame() %>%
+  ggplot(aes(x = reorder(Feature, Gain), y = Gain)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  theme_bw()
+```
+
+## Explainable Machine Learning
+Creating an explainer using the DALEX package is an essential step towards demystifying
+the complex decisions made by our XGBoost model. This process is not just about gaining
+technical clarity, but about ensuring that the predictive model we have built is transparent
+and its results are interpretable. With the explainer, we aim to break down the model's
+predictions and understand the impact of each variable, particularly our spatial feature
+`DistanceToHotspot`.
+
+```{r}
+accident_data_matrix <- as.matrix(
+  accident_data %>%
+    select(-Accident_Severity) %>%
+    mutate_if(is.factor, as.numeric)
+)
+accident_data_y <- accident_data$Accident_Severity
+
+# Create an explainer for your model
+explainer <- DALEX::explain(
+  model = model,
+  data = accident_data_matrix,
+  y = accident_data_y,
+)
+```
+
+This plot is a graphical representation of the importance of different predictors in the
+XGBoost model, as determined by the DALEX package's explainer object. In this plot, the
+variables are ranked according to their influence on the model's predictive accuracy,
+with longer bars indicating greater importance.
+
+```{r}
+# Variable Importance Plot
+vi <- variable_importance(explainer)
+plot(vi)
+```
+
+In this plot, the x-axis represents different values of the Speed_limit,
+while the y-axis shows the average predicted probability of the accident severity.
+The shape of the curve suggests that the predicted severity of accidents increases
+significantly as the speed limit goes up to a certain point, then plateaus,
+and starts to decrease after that. This could imply that there's an optimal range
+of speed limits that are associated with the severity of accidents, which could
+provide actionable insights for policymakers when considering speed regulation
+as a part of road safety measures.
+
+```{r}
+# Partial Dependence Plot for Speed_limit variable
+sl_pdp <- model_profile(explainer, variables = "Speed_limit")
+plot(sl_pdp)
+```
+
+This plot shows a distinct trend where the predicted severity of accidents changes
+with varying distances to hotspots. Initially, there is a sharp increase,
+which suggests that accidents occurring closer to hotspots (but not the hotspot themselves)
+are predicted to be more severe. Beyond a certain point, as the distance increases, the predicted
+severity decreases, indicating that accidents much further from these hotspots might be less fatal.
+
+```{r}
+# Patrial Dependence Plot for DistanceToHotspot variable
+dth_pdp <- model_profile(explainer, variables = "DistanceToHotspot")
+plot(dth_pdp)
+```
+
+The Break Down Plot starts with a baseline, which is the intercept (the average prediction over the dataset).
+Each subsequent bar shows the contribution of an individual feature to the prediction, with bars pointing
+to the right indicating an increase in the predicted value and bars to the left indicating a decrease.
+The sum of these contributions and the intercept gives us the final prediction for this particular observation.
+
+We can see the effects of features like TimeOfDay, Speed_limit, Urban_or_Rural_Area, and others,
+including the spatial variable DistanceToHotspot. The length and direction of each bar provide a
+clear and detailed picture of the factors leading to the prediction, which is particularly
+useful for understanding the model's decision-making process for individual predictions.
+This insight can be especially valuable when investigating specific cases or anomalies.
+
+```{r}
+# Break Down Plot for a single prediction
+first_observation <- accident_data_matrix[1, , drop = FALSE]
+bd <- predict_parts(
+  explainer,
+  new_observation = first_observation
+)
+plot(bd)
+```
+
+Each bar represents a feature's SHAP value, which quantifies the impact of that feature on the model's output.
+Red bars indicate features that push the prediction lower (decrease the predicted probability of the outcome),
+and green bars indicate features that push the prediction higher. The length of the bar shows the magnitude of the feature's impact.
+
+In SHAP value plots, the sum of all feature contributions along with the base value (not shown in the plot) equals
+the final prediction for the given observation. SHAP values provide a more nuanced and detailed explanation of
+the prediction, attributing the contribution of each feature in a way that sums up to the actual prediction made
+by the model.
+
+```{r}
+# Shapley Values Plot for a single prediction
+sv <- predict_parts(
+  explainer,
+  new_observation = first_observation,
+  type = "shap"
+)
+plot(sv)
+```
