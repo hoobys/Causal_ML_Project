@@ -1,13 +1,13 @@
 ---
-title: "UK road safety accidents"
-output: html_notebook
+title: "Causal Machine Learning for Spatial Data Project - UK road safety accidents"
+authors: "Hubert Wojewoda, Kacper Sokołowski"
+output:
+  html_document:
+    df_print: paged
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
-
 ```{r}
+# Load libraries
 library(tidyverse)
 library(readr)
 library(lubridate)
@@ -23,11 +23,14 @@ library(caret)
 library(viridis)
 library(ggridges)
 library(xgboost)
+library(DALEX)
 
+# Set working directory
 setwd(here())
 ```
 
 ```{r}
+# Load data
 accident_data <- read_csv("accident_data.csv")
 
 summary(accident_data)
@@ -35,11 +38,7 @@ head(accident_data)
 ```
 
 ```{r}
-unique(accident_data$Year)
-```
-
-
-```{r}
+# Remove unnecessary columns
 accident_data <- accident_data %>%
   select(
     Longitude, Latitude,
@@ -47,10 +46,7 @@ accident_data <- accident_data %>%
     Date, Time,
     Weather_Conditions, Light_Conditions,
     Road_Surface_Conditions,
-    "1st_Road_Class", "2nd_Road_Class",
     Speed_limit,
-    "Pedestrian_Crossing-Human_Control",
-    "Pedestrian_Crossing-Physical_Facilities",
     Urban_or_Rural_Area,
     Number_of_Casualties, Number_of_Vehicles
   )
@@ -58,14 +54,17 @@ accident_data <- accident_data %>%
 
 
 ```{r}
+# Remove observations with missing values
 accident_data <- accident_data %>%
   filter(!is.na(Longitude), !is.na(Latitude))
 ```
 
 ```{r}
+# Encode the target variable
 accident_data$Accident_Severity <- accident_data$Accident_Severity %>%
   recode("Slight" = 0, "Severe" = 1, "Fatal" = 1)
 
+# Format the date and time variables
 accident_data$Date <- as.Date(accident_data$Date, format = "%Y-%m-%d")
 accident_data$Year <- format(accident_data$Date, "%Y")
 
@@ -90,8 +89,6 @@ dbscan_result <- dbscan(coordinates, eps = 0.1, minPts = 500)
 
 # Extract cluster labels
 cluster_labels <- dbscan_result$cluster
-
-# Add cluster labels to the accident_data dataframe
 accident_data$Cluster <- cluster_labels
 
 # Filter the accident_data dataframe to include only observations in a cluster
@@ -138,12 +135,13 @@ map
 ```
 
 ```{r}
+# Filter unnecessary columns
 accident_data <- accident_data[, !(names(accident_data) %in% c(
-  "Longitude", "Latitude", "Cluster", "Hour", "Number_of_Casualties",
-  "Date", "Time", "Year", "1st_Road_Class", "2nd_Road_Class",
-  "Pedestrian_Crossing-Human_Control", "Pedestrian_Crossing-Physical_Facilities"
+  "Longitude", "Latitude", "Cluster", "Hour",
+  "Number_of_Casualties", "Date", "Time", "Year"
 ))]
 
+# Remove observations with missing values
 accident_data <- accident_data[!is.na(accident_data$Accident_Severity), ]
 
 # Convert all columns to factors
@@ -254,7 +252,10 @@ ggplot(accident_data, aes(x=DistanceToHotspot, fill=factor(Accident_Severity))) 
 ```{r}
 # Split the data into training and testing sets
 set.seed(123)
-train_indices <- createDataPartition(accident_data$Accident_Severity, p = 0.7, list = FALSE)
+train_indices <- createDataPartition(
+  accident_data$Accident_Severity,
+  p = 0.7, list = FALSE
+)
 train_data <- accident_data[train_indices, ]
 test_data <- accident_data[-train_indices, ]
 
@@ -316,4 +317,48 @@ xgb.importance(model = model) %>%
   geom_bar(stat = "identity") +
   coord_flip() +
   theme_bw()
+```
+
+```{r}
+accident_data_matrix <- as.matrix(
+  accident_data %>%
+    select(-Accident_Severity) %>%
+    mutate_if(is.factor, as.numeric)
+)
+accident_data_y <- accident_data$Accident_Severity
+
+# Create an explainer for your model
+explainer <- DALEX::explain(
+  model = model,
+  data = accident_data_matrix,
+  y = accident_data_y,
+)
+
+# Variable Importance Plot
+vi <- variable_importance(explainer)
+plot(vi)
+
+# Partial Dependence Plot for a Speed_limit variable
+sl_pdp <- model_profile(explainer, variables = "Speed_limit")
+plot(sl_pdp)
+
+# Patrial Dependence Plot for a DistanceToHotspot variable
+dth_pdp <- model_profile(explainer, variables = "DistanceToHotspot")
+plot(dth_pdp)
+
+# Break Down Plot for a single prediction
+first_observation <- accident_data_matrix[1, , drop = FALSE]
+bd <- predict_parts(
+  explainer,
+  new_observation = first_observation
+)
+plot(bd)
+
+# Shapley Values Plot for a single prediction
+sv <- predict_parts(
+  explainer,
+  new_observation = first_observation,
+  type = "shap"
+)
+plot(sv)
 ```
