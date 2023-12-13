@@ -1,11 +1,25 @@
 ---
-title: "UK road safety accidents"
-output: html_notebook
+title: "Analysis of Accident Severity in Proximity to Hotspots"
+output: html_document
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+## Introduction to the Analysis of Accident Severity in Proximity to Hotspots
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+Road safety is a paramount concern for both individuals and authorities, with the impact of traffic accidents ranging from minor to fatal. Understanding the factors that contribute to the severity of these incidents can inform preventive measures and policies. This analysis aims to investigate the influence of the distance from accident sites to traffic hotspots—locations where accidents occur more frequently—on the severity of these accidents. The working hypothesis suggests that accidents occurring closer to hotspots are more likely to result in minor (slight) injuries rather than being fatal.
+
+To conduct this investigation, data from the year 2017 were sourced from a comprehensive UK road safety dataset available at [Kaggle](https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles?select=Accident_Information.csv). The dataset encompasses detailed reports of road accidents, providing a fertile ground for spatial and quantitative analysis.
+
+### Methodology
+
+The methodology of the analysis involves several stages:
+
+- **Spatial Clustering**: Using the DBSCAN clustering method, accident locations defined by longitude and latitude were grouped to identify areas of high accident concentration.
+
+- **Hotspot Identification**: The centers of the identified clusters were calculated, establishing the hotspots. Subsequently, the distances of specific accident sites to these hotspots were determined.
+
+- **Data Modeling**: With the distances and other relevant variables at hand, the XGBoost algorithm was employed to model the data and examine the relationship between proximity to hotspots and accident severity.
+
+The outcome of this analysis aims to shed light on the spatial dynamics of road accidents and their outcomes, potentially offering insights into road safety enhancement strategies.
 
 ```{r}
 library(tidyverse)
@@ -26,6 +40,7 @@ library(xgboost)
 
 setwd(here())
 ```
+## Read data
 
 ```{r}
 accident_data <- read_csv("accident_data.csv")
@@ -56,6 +71,7 @@ accident_data <- accident_data %>%
   )
 ```
 
+## Data adjustments
 
 ```{r}
 accident_data <- accident_data %>%
@@ -78,6 +94,7 @@ accident_data$TimeOfDay <- cut(accident_data$Hour,
   labels = c("Night", "Morning", "Afternoon", "Evening")
 )
 ```
+## DBSCAN clustering
 
 ```{r}
 # Convert Longitude and Latitude to a matrix
@@ -98,6 +115,8 @@ accident_data$Cluster <- cluster_labels
 clustered_accident_data <- accident_data[accident_data$Cluster > 0, ]
 ```
 
+## Calculate distance to hotspots
+
 ```{r}
 # Calculate the centroids of the clusters
 centroids <- tapply(
@@ -115,6 +134,7 @@ accident_data$DistanceToHotspot <- apply(coordinates, 1, function(coord) {
 ```{r}
 summary(accident_data$DistanceToHotspot)
 ```
+## Plot clustering outcome
 
 ```{r}
 # Create a color palette for clusters
@@ -136,6 +156,12 @@ map <- leaflet() %>%
   )
 map
 ```
+
+## Clustering summary
+
+The clustering analysis depicted on the map has successfully identified 29 distinct clusters, primarily situated near densely populated areas such as major cities and urban agglomerations. This pattern is not unexpected as higher traffic volumes in such areas typically lead to a greater number of incidents. The visualization clearly indicates these hotspots, with varying cluster sizes likely reflecting the intensity of traffic accident occurrences. Recognizing these clusters is instrumental for urban planners and public safety officials, as it can guide traffic management strategies, resource deployment for emergency services, and the implementation of safety measures to mitigate accident risks in these high-density zones.
+
+## Exploratory Data Analysis
 
 ```{r}
 accident_data <- accident_data[, !(names(accident_data) %in% c(
@@ -250,70 +276,23 @@ ggplot(accident_data, aes(x=DistanceToHotspot, fill=factor(Accident_Severity))) 
                     name="Accident Severity") +  
   theme_minimal()
 ```
+## Exploratory Data Analysis Summary
 
-```{r}
-# Split the data into training and testing sets
-set.seed(123)
-train_indices <- createDataPartition(accident_data$Accident_Severity, p = 0.7, list = FALSE)
-train_data <- accident_data[train_indices, ]
-test_data <- accident_data[-train_indices, ]
+The exploratory data analysis stage provided several key insights from the visualizations created:
 
-# Create the xgboost model
-params <- list(
-  objective = "binary:logistic",
-  eval_metric = "logloss",
-  eta = 0.1,
-  max_depth = 4,
-  subsample = 0.8,
-  colsample_bytree = 0.8
-)
+### Distance to Hotspot
+- The spread in the slight category closer to hotspots indicates that minor accidents are more concentrated around these areas. Conversely, severe or fatal accidents appear to happen at various distances from hotspots, suggesting a different set of factors may influence the more serious accidents.
 
-# Convert the data to numeric
-train_data_numeric <- train_data %>%
-  mutate_if(is.factor, as.numeric)
-test_data_numeric <- test_data %>%
-  mutate_if(is.factor, as.numeric)
+### Weather Conditions
+- The majority of accidents occur in clear weather conditions ("Fine no high winds"), which is likely a reflection of the predominance of such weather in the dataset. Adverse weather conditions, like rain or snow, are associated with fewer accidents. This might be due to more cautious driving or fewer people traveling under these conditions.
 
-# Now use this numeric data in your model
-model <- xgboost(
-  data = as.matrix(train_data_numeric %>% select(-Accident_Severity)),
-  label = train_data$Accident_Severity,
-  params = params,
-  nrounds = 100
-)
-# Make predictions on the test data
-predictions <- predict(
-  model,
-  as.matrix(test_data_numeric %>% select(-Accident_Severity))
-)
-```
+### Day of the Week
+- Fridays experience the highest number of accidents, while Sundays have the fewest. This pattern may relate to the rhythms of workweek travel and weekend behaviors. Notably, the severity of accidents does not vary markedly with the day of the week.
 
-```{r}
-summary(train_data_numeric)
+### Time of Day
+- Afternoon hours see a spike in accident counts, possibly linked to increased traffic volume. Nighttime has the fewest accidents, which could be attributed to lower traffic density. The severity of accidents does not seem to be influenced proportionally by the time of day.
 
-# Accuracy
-mean(ifelse(predictions > 0.5, 1, 0) == test_data$Accident_Severity)
-```
-```{r}
-# AUC score
-roc_obj <- roc(test_data$Accident_Severity, predictions)
-auc_value <- auc(roc_obj)
-print(auc_value)
-```
-```{r}
-# Plot the ROC curve
-plot(roc_obj, main = "ROC")
-```
+### Speed Limits
+- The distribution of accidents peaks at a speed limit of 30 units, hinting that most accidents occur in areas with this speed limit, potentially in urban settings where such limits are common.
 
-```{r}
-# Feature importance
-xgb.importance(model = model)
 
-# Show importance plot with ggplot2
-xgb.importance(model = model) %>%
-  as.data.frame() %>%
-  ggplot(aes(x = reorder(Feature, Gain), y = Gain)) +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  theme_bw()
-```
